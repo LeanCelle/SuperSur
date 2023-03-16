@@ -568,7 +568,7 @@ div.horarios-iframe {
 
 /* Inicio */
 
-@media (min-width: 425px) and (max-width: 1439px) {
+@media (min-width: 375px) and (max-width: 1439px) {
     header {
         display: flex;
         flex-direction: column;
@@ -577,14 +577,14 @@ div.horarios-iframe {
         display: flex;
         flex-direction: row;
         justify-content: center;
-		font-size: 10px;
+		font-size: 8px;
     }
 	li a.nav {
-		padding: 0px 18px;
+		padding: 0px 16px;
 	}
 	ul.navdesplegable {
 		height: auto;
-		width: 86px;
+		width: 75px;
 		margin: 0px;
 	}
     img.cara {
@@ -602,25 +602,25 @@ div.horarios-iframe {
         gap: 0px;
     }
     img.suprema {
-        height: 80px;
+        height: 60px;
         width: auto;
     }
     img.novillo {
-        height: 80px;
+        height: 60px;
         width: auto;
     }
     img.elabora {
-        height: 160px;
+        height: 120px;
         width: auto;
 		margin: 0px;
 		padding: 0px;
     }
     img.lechon {
-        height: 80px;
+        height: 60px;
         width: auto;
     }
     img.cerdo {
-        height: 80px;
+        height: 60px;
         width: auto;
     }
     section.prods {
@@ -712,10 +712,10 @@ div.horarios-iframe {
 
 /*Almacen - Congelados - Bebidas */
 
-@media (min-width: 425px) and (max-width: 1439px) {
+@media (min-width: 375px) and (max-width: 1439px) {
     img.marcas {
         display: flex;
-        height: 25px;
+        height: 15px;
         width: auto;
     }
     div.product-encontrados {
@@ -740,14 +740,10 @@ div.horarios-iframe {
     }
 }
 
-@media (min-width: 425px) and (max-width: 1439px) {
-
-}
-
 
 /* Formulario */
 
-@media (min-width: 425px) and (max-width: 1439px) {
+@media (min-width: 375px) and (max-width: 1439px) {
     section.form-container {
         display: flex;
         flex-direction: column;
@@ -767,7 +763,7 @@ div.horarios-iframe {
 
 /* Nosotros */
 
-@media (min-width: 425px) and (max-width: 1439px) {
+@media (min-width: 375px) and (max-width: 1439px) {
     div.fondotexto {
         display: flex;
         font-size: smaller;
@@ -775,6 +771,12 @@ div.horarios-iframe {
     ul.horarios {
         padding: 0px;
     }
+    ul.horarios li {
+		font-size: smaller;
+	}
+    p.telefono {
+		font-size: smaller;
+	}
     iframe.iframe {
         display: none;
     }
