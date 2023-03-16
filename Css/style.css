@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+
+
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+
+/* INICIO */
+
+body.backgroundcolor {
+    background-color: rgb(230, 230, 177);
+    background-position:top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    background-color: rgb(172, 172, 97);
+	height: auto;
+	width: 100%;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div.header {
+	color: white;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+h1 a {
+    color: white;
+    display: flex;
+    width: 100%;
+	height: 165px;
+    font-family: 'Cinzel', serif;
+    font-size: 80px;
+    align-items: center;
+}
+
+ul.flex-nav {
+	height: auto;
+	width: 100%;
+	display: flex;
+	list-style: none;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+li a.nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: larger;
+	padding:0px 30px;
+    align-items: center;
+}
+
+li a.nav:hover {
+    transform: scale(1.05);
+}
+
+ul.navdesplegable {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    background-color: transparent;
+    text-align: center;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.222);
+}
+
+ul.flex-nav li:hover ul.navdesplegable {
+    display: block;
+}
+
+ul.navdesplegable li:hover {
+    transform: scale(1.05);
+}
+
+a.navdesplegable {
+    display: block;
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
+div.nav {
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: larger;
+	padding:0px 30px;
+}
+div.nav:hover {
+    color: rgb(246, 255, 169);
+}
+
+div.cara {
+    height: 50px;
+    display: flex;
+    border: none;
+}
+div.cara:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+a.nav:hover {
+    color: rgb(246, 255, 169);
+}
+img.imgdeslizable {
+    height: 470px;
+    width: 100%;
+}
+img.todaslasbebidas {
+    height: auto;
+    width: 100%;
+    padding: 10px 10px 40px 10px;
+}
+
+section.pruebabanner {
+    display: grid;
+    padding: 40px;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+div.suprema {
+    grid-area: suprema;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+div.novillo {
+    grid-area: novillo;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+div.elabora {
+    grid-area: elabora;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+div.lechon {
+    grid-area: lechon;
+    grid-column: 3/4;
+    grid-row: 1
+}
+div.cerdo {
+    grid-area: cerdo;
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+section.prods {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 50px 0px;
+}
+div.tacc {
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    
+}
+div.pan {
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+}
+.h-prods {
+    display: flex;
+    align-items: center;
+}
+img.prods {
+    height: 150px;
+    width: 330px;
+}
+
+section.descuentos {
+	margin: 10px 0px 70px 0px;
+    display: grid;
+	padding: 10px;
+    grid-template-areas: 
+    "ciudad icbc lanacion superville galicia" ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+div.ciudad {
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+    border-radius: 20px;
+    grid-area: ciudad;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+}
+div.icbc {
+	padding: 10px;
+	text-align:center;
+	background-color: white;
+    border-radius: 20px;
+    grid-area: icbc;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+
+}
+div.lanacion {
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+    border-radius: 20px;
+    grid-area: lanacion;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+}
+div.superville {
+    padding: 10px;
+	text-align: center;
+	background-color: white;
+    border-radius: 20px;
+    grid-area: superville;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+}
+div.galicia {
+    padding: 10px;
+	text-align: center;
+	background-color: white;
+    border-radius: 20px;
+    grid-area: galicia;
+    box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+}
+p.dias {
+    color: gray;
+	font-family: arial;
+}
+h3.rojo {
+	padding: 10px;
+    color: red;
+	font-family: arial;
+}
+img.bancos {
+    height:40px;
+	width: 80px;
+}
+
+div.wpp {
+    position: sticky;
+    bottom: 0%;
+    right: 100px;
+    text-align: right;
+    margin: 0px 90px 0px 0px
+}
+
+div.registrar {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    background-color:rgb(255, 255, 255);
+	padding: 20px 0px;
+	margin: 40px 300px 0px 300px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.381);
+}
+h5.registrate {
+    text-align: center;
+}
+input.registrarse{
+    text-align: center;
+    margin-top: 15px;
+}
+div.foot {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px 0px 20px 0px;
+}
+div.foot-tamaño {
+    text-align: center;
+    height: auto;
+    width: 200px;
+}
+p.tdcolor {
+	display: flex;
+	padding: 3px 0px;
+    justify-content: center;
+}
+
+img.redes {
+    height: 15px;
+    width: 15px;
+}
+
+/* ALMACEN - CONGELADOS - BEBIDAS */
+
+.marcasseleccionadas {
+	background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+}
+.marcas-uno {
+    display: flex;
+	gap: 60px;
+	margin: 10px 20px 10px 0px;
+}
+.marcas-dos {
+    display: flex;
+	gap: 60px; 
+	margin: 10px 0px 10px 20px;
+}
+.marcas-tres {
+    display: flex;
+	gap: 60px;
+	margin: 10px 0px 10px 0px;
+
+}
+img.marcas {
+	display: flex;
+    height: 50px;
+    width: auto;
+}
+
+div.product-encontrados {
+    color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	justify-content: center;
+    display: flex;
+}
+p.p-prodencontrados {
+    display: flex;
+    margin: 0px;
+}
+div.prodtr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+	padding: 50px 0px;
+}
+
+div.prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px 5px 30px 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+div.prod:hover {
+    transform: scale(1.01);
+}
+div.prod img.prueba {
+	justify-content: center;
+    display: flex;
+	width: 250px;
+	height: auto;
+}
+div.prod p {
+	justify-content: center;
+    display: flex;
+    width: 250px;
+    height: auto;
+    text-align: center;
+}
+
+p.precio {
+    padding-top: 40px;
+}
+img.prueba {
+	padding: 10px 10px 20px 10px;
+}
+
+
+div.mejores-ofertas {
+    color: black;
+	height: auto;
+	width: 100%;
+    background-color: rgb(255, 255, 248);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+}
+div.ofertas {
+	padding: 0px 15px;
+}
+h6.ofertas {
+	text-align:center;
+}
+input.registrofertas {
+	padding: 10px 100px
+}
+
+/* Formulario*/
+
+body.backgroundcolorr {
+    background-color: rgb(230, 230, 177);
+    background-size: 100% 100%;
+    background-position:top center;
+    background-repeat: no-repeat;
+}
+
+section.form-container {
+	background-color: rgba(3, 118, 108, 0.205);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px 60px 0px;
+}
+.formredes {
+    display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+.formredes img {
+	height: 50px;
+	width: auto;
+}
+
+div.form-one {
+    display: flex;
+    flex-direction: column;
+}
+div.form-two {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-h {
+	margin:30px 0px 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input.inputform {
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 10px 10px; 
+}
+textarea.inputform {
+    padding: 10px 0px 10px 10px;
+}
+input.enviar {
+	background-color: rgba(0, 0, 0, 0.205);
+	margin: 10px 0px 20px 0px;
+	padding: 10px 0px 10px 0px;
+}
+
+td.tdcolor {
+    background-color: black;
+    border: none;
+    padding: 10px 0px 0px 0px;
+	text-align: left;
+    color: white;
+}
+th.thcolor {
+    background-color: black;
+    border: none;
+    padding: 10px 0px 0px 0px;
+	text-align: left;
+    color: white;
+}
+
+label.bglabel {
+    background-color: darkgreen;
+    color: white;
+}
+
+/* Nosotros*/
+
+div.fondotexto {
+	display: flex;
+	padding: 0px 80px 0px 80px;
+}
+
+section#fondotexto {
+	height: auto;
+	width: 100%;
+    margin: 80px 0px 80px 0px;
+	display: flex;
+	flex-direction: column;
+    background-color: rgba(3, 118, 108, 0.205);
+	padding: 0px 25px 0px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.555);
+}
+
+p.pregunta {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: larger;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+p.respuesta {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+p.direccion {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+}
+p.horarios {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+}
+ul.horarios {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    list-style: none;
+}
+p.telefono {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+}
+
+div.iframe {
+	height: auto;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+iframe.iframe {
+    display: flex;
+	border: none;
+	border-radius: 30px;
+}
+div.horarios-iframe {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Responsive */
+
+
+/* Inicio */
+
+@media (min-width: 425px) and (max-width: 1439px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.flex-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+		font-size: 10px;
+    }
+	li a.nav {
+		padding: 0px 18px;
+	}
+	ul.navdesplegable {
+		height: auto;
+		width: 86px;
+		margin: 0px;
+	}
+    img.cara {
+		display: flex;
+        width: 20px;
+    }
+    div.menudinamico {
+        display: none
+    }
+    img.todaslasbebidas {
+        padding: 20px 10px 20px 10px;
+    }
+    section.pruebabanner {
+        padding: 0px;
+        gap: 0px;
+    }
+    img.suprema {
+        height: 80px;
+        width: auto;
+    }
+    img.novillo {
+        height: 80px;
+        width: auto;
+    }
+    img.elabora {
+        height: 160px;
+        width: auto;
+		margin: 0px;
+		padding: 0px;
+    }
+    img.lechon {
+        height: 80px;
+        width: auto;
+    }
+    img.cerdo {
+        height: 80px;
+        width: auto;
+    }
+    section.prods {
+		height: auto;
+		width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0px 0px 0px;
+		align-items: center;
+    }
+	h5.tamaño-h {
+		font-size: small;
+		height: 20px;
+		width: 150px;
+		margin: 0px;
+	}
+    img.prods {
+        height: 50px;
+        width: 100px;
+    }
+
+    section.descuentos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    p.dias {
+        color: gray;
+        font-family: arial;
+		font-size: smaller
+    }
+    h3.rojo {
+        padding: 10px;
+        color: red;
+        font-family: arial;
+		font-size: small
+    }
+    img.bancos {
+        height: 40px;
+        width: 60px;
+    }
+    div.registrar {
+        margin: 20px 0px 20px 0px;
+		border-radius: 0px;
+    }
+    h5.registrate {
+        font-size: small;
+    }
+    input.registrarse{
+        margin-top: 15px;
+		font-size: x-small;
+    }
+
+    div.mejores-ofertas {
+        display: flex;
+        flex-direction: column;
+    }
+    div.ofertas {
+        padding: 0px 15px;
+    }
+	h5.mejores {
+		font-size: small;
+	}
+    h6.ofertas {
+		font-size: x-small;
+    }
+    input.registrofertas {
+        padding: 5px 50px;
+		font-size: x-small;
+    }
+
+    div.wpp {
+        margin: 0px;
+    }
+    img.wpp {
+        height: auto;
+        width: 50px;
+    }
+    p.td-color {
+        justify-content: space-between;
+    }
+    div.none {
+        display: none;
+    }
+
+}
+
+/*Almacen - Congelados - Bebidas */
+
+@media (min-width: 425px) and (max-width: 1439px) {
+    img.marcas {
+        display: flex;
+        height: 25px;
+        width: auto;
+    }
+    div.product-encontrados {
+        background-color: white;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    div.wpp {
+        margin: 0px;
+    }
+    div.mejores-ofertas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p.td-color {
+        justify-content: space-between;
+    }
+    div.none {
+        display: none;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1439px) {
+
+}
+
+
+/* Formulario */
+
+@media (min-width: 425px) and (max-width: 1439px) {
+    section.form-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 20px 0px 10px;
+        padding: 20px 10px 0px 10px;
+    }
+    div.formredes {
+        justify-content: center;
+        margin: 20px 0px 10px 0px;
+    }
+    div.formredes img {
+        height: 20px;
+        width: auto;
+    }
+}
+
+/* Nosotros */
+
+@media (min-width: 425px) and (max-width: 1439px) {
+    div.fondotexto {
+        display: flex;
+        font-size: smaller;
+    }
+    ul.horarios {
+        padding: 0px;
+    }
+    iframe.iframe {
+        display: none;
+    }
+}
+
+
+
+
+
+
