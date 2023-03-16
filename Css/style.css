@@ -595,32 +595,32 @@ div.horarios-iframe {
 		height: 150px;
 	}
     img.todaslasbebidas {
-        padding: 20px 10px 20px 10px;
+        padding: 0px 5px 20px 5px;
     }
     section.pruebabanner {
-        padding: 0px;
+        padding: 0px 5px 15px 5px;
         gap: 0px;
     }
     img.suprema {
-        height: 60px;
+        height: 70px;
         width: auto;
     }
     img.novillo {
-        height: 60px;
+        height: 70px;
         width: auto;
     }
     img.elabora {
-        height: 120px;
+        height: 140px;
         width: auto;
 		margin: 0px;
 		padding: 0px;
     }
     img.lechon {
-        height: 60px;
+        height: 70px;
         width: auto;
     }
     img.cerdo {
-        height: 60px;
+        height: 70px;
         width: auto;
     }
     section.prods {
@@ -776,6 +776,9 @@ div.horarios-iframe {
         margin: 10px 10px 0px 10px;
         padding: 20px 10px 0px 10px;
     }
+    h5.telefono {
+        color: black;
+    }
     div.formredes {
         justify-content: center;
         margin: 20px 0px 10px 0px;
@@ -801,6 +804,7 @@ div.horarios-iframe {
 	}
     p.telefono {
 		font-size: smaller;
+        color: black;
 	}
     iframe.iframe {
         display: none;
