@@ -19,7 +19,7 @@ body.backgroundcolor {
 
 
 header {
-    background-color: rgb(172, 172, 97);
+    background-color: rgba(168, 168, 88, 0.845);
 	height: auto;
 	width: 100%;
 	display: flex;
@@ -116,8 +116,6 @@ a {
     color: white;
     text-decoration: none;
 }
-
-
 a.nav:hover {
     color: rgb(246, 255, 169);
 }
@@ -128,7 +126,7 @@ img.imgdeslizable {
 img.todaslasbebidas {
     height: auto;
     width: 100%;
-    padding: 10px 10px 40px 10px;
+    padding: 40px 10px 40px 10px;
 }
 
 section.pruebabanner {
@@ -176,7 +174,7 @@ div.tacc {
     display: flex;
     gap: 50px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 0px 10px 15px;
     box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
     
 }
@@ -184,7 +182,7 @@ div.pan {
     background-color: white;
     display: flex;
     gap: 50px;
-    padding: 10px;
+    padding: 10px 0px 10px 15px;
     border-radius: 10px;
     box-shadow: 10px;
     box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
@@ -193,15 +191,18 @@ div.pan {
     display: flex;
     align-items: center;
 }
+h5.tamaño-h {
+    font-size: medium;
+}
 img.prods {
-    height: 150px;
-    width: 330px;
+    height: 100px;
+    width: 200px;
 }
 
 section.descuentos {
-	margin: 10px 0px 70px 0px;
+    background-color: rgba(0, 0, 0, 0.223);
     display: grid;
-	padding: 10px;
+	padding: 70px 10px 70px 10px;
     grid-template-areas: 
     "ciudad icbc lanacion superville galicia" ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -263,22 +264,24 @@ img.bancos {
     height:40px;
 	width: 80px;
 }
-
 div.wpp {
     position: sticky;
     bottom: 0%;
     text-align: right;
     margin: 0px 70px 0px 0px;
 }
-
+.container-registrar {
+    background-color:rgba(0, 0, 0, 0.223);
+    padding: 15px 0px 60px 0px;
+}
 div.registrar {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
     background-color:rgb(255, 255, 255);
-	padding: 20px 0px;
-	margin: 40px 300px 0px 300px;
+	padding: 20px 0px 20px 0px;
+	margin: 0px 300px 0px 300px;
     border-radius: 30px;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.381);
 }
@@ -429,7 +432,7 @@ section.form-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px 0px 60px 0px;
+    margin: 30px 0px 0px 0px;
 }
 .formredes {
     display: flex;
@@ -629,7 +632,6 @@ div.horarios-iframe {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin: 10px 0px 0px 0px;
 		align-items: center;
     }
 	h5.tamaño-h {
@@ -638,11 +640,11 @@ div.horarios-iframe {
 		width: 150px;
 		margin: 0px;
 	}
+
     img.prods {
         height: 50px;
         width: 100px;
     }
-
     section.descuentos {
         display: flex;
         flex-wrap: wrap;
@@ -660,8 +662,12 @@ div.horarios-iframe {
         height: 20px;
         width: 50px;
     }
+    .container-registrar {
+        background-color:rgba(0, 0, 0, 0.223);
+        padding: 0px 0px 40px 0px;
+    }
     div.registrar {
-        margin: 20px 0px 20px 0px;
+        margin: 0px 0px 0px 0px;
 		border-radius: 0px;
     }
     h5.registrate {
@@ -695,7 +701,7 @@ div.horarios-iframe {
     }
     img.wpp {
         height: auto;
-        width: 50px;
+        width: 40px;
     }
     p.tdcolor {
         font-size: small;
