@@ -38,8 +38,7 @@ header div.header h1 a {
   font-size: 80px;
   align-items: center;
 }
-
-ul.flex-nav {
+header ul.flex-nav {
   height: auto;
   width: 100%;
   display: flex;
@@ -48,8 +47,7 @@ ul.flex-nav {
   margin: 0px;
   padding: 0px;
 }
-
-li a.nav {
+header ul.flex-nav li a.nav {
   display: flex;
   width: 100%;
   height: auto;
@@ -57,7 +55,7 @@ li a.nav {
   padding: 0px 30px;
   align-items: center;
 }
-li a.nav:hover {
+header ul.flex-nav li a.nav:hover {
   transform: scale(1.05);
 }
 
@@ -72,31 +70,17 @@ ul.navdesplegable {
   padding: 0px;
   background-color: rgba(0, 0, 0, 0.222);
 }
-
-ul.flex-nav li:hover ul.navdesplegable {
-  display: block;
-}
-
 ul.navdesplegable li:hover {
   transform: scale(1.05);
 }
-
-a.navdesplegable {
+ul.navdesplegable a.navdesplegable {
   display: block;
   color: white;
   padding: 10px 0px 10px 0px;
 }
 
-div.nav {
-  color: white;
-  width: 100%;
-  height: auto;
-  font-size: larger;
-  padding: 0px 30px;
-}
-
-div.nav:hover {
-  color: rgb(246, 255, 169);
+li:hover ul.navdesplegable {
+  display: block;
 }
 
 div.cara {
@@ -104,7 +88,6 @@ div.cara {
   display: flex;
   border: none;
 }
-
 div.cara:hover {
   transform: scale(1.05);
   cursor: pointer;
@@ -114,8 +97,7 @@ a {
   color: white;
   text-decoration: none;
 }
-
-a.nav:hover {
+a:hover {
   color: rgb(246, 255, 169);
 }
 
@@ -185,17 +167,14 @@ section.prods div.pan {
   box-shadow: 10px;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
-
-.h-prods {
+section.prods .h-prods {
   display: flex;
   align-items: center;
 }
-
-h5.tamaño-h {
+section.prods h5.tamaño-h {
   font-size: medium;
 }
-
-img.prods {
+section.prods img.prods {
   height: 100px;
   width: 200px;
 }
@@ -248,19 +227,16 @@ section.descuentos div.galicia {
   grid-area: galicia;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
-
-p.dias {
+section.descuentos p.dias {
   color: gray;
   font-family: arial;
 }
-
-h4.rojo {
+section.descuentos h4.rojo {
   padding: 10px;
   color: red;
   font-family: arial;
 }
-
-img.bancos {
+section.descuentos img.bancos {
   height: 40px;
   width: 80px;
 }
@@ -366,8 +342,7 @@ div.prodtr {
   gap: 70px;
   padding: 50px 0px;
 }
-
-div.prod {
+div.prodtr div.prod {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,24 +350,24 @@ div.prod {
   padding: 30px 5px 30px 5px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
 }
-div.prod:hover {
+div.prodtr div.prod:hover {
   transform: scale(1.01);
 }
-div.prod img.prueba {
+div.prodtr div.prod img.prueba {
   justify-content: center;
   display: flex;
   width: 250px;
   height: auto;
   padding: 10px 10px 20px 10px;
 }
-div.prod p {
+div.prodtr div.prod p {
   justify-content: center;
   display: flex;
   width: 250px;
   height: auto;
   text-align: center;
 }
-div.prod p.precio {
+div.prodtr div.prod p.precio {
   padding-top: 40px;
 }
 
@@ -455,7 +430,7 @@ section.form-container div.form-two input.enviar {
 }
 
 div.formredes img {
-  height: 50px;
+  height: 40px;
   width: auto;
 }
 
@@ -464,8 +439,7 @@ section.fondotexto {
   display: flex;
   padding: 0px 80px 0px 80px;
 }
-
-div.fondo-texto {
+section.fondotexto div.fondo-texto {
   height: auto;
   width: 100%;
   margin: 80px 0px 80px 0px;
@@ -476,8 +450,7 @@ div.fondo-texto {
   border-radius: 10px;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.555);
 }
-
-p.pregunta {
+section.fondotexto div.fondo-texto p.pregunta {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: black;
@@ -485,41 +458,36 @@ p.pregunta {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
-p.respuesta {
+section.fondotexto div.fondo-texto p.respuesta {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: black;
 }
-
-div.horarios-iframe {
+section.fondotexto div.fondo-texto div.horarios-iframe {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-
-p.direccion {
+section.fondotexto div.fondo-texto div.horarios-iframe p.direccion {
   font-family: "Times New Roman", Times, serif;
   color: black;
   text-align: left;
   margin: 0px 0px 0px 0px;
 }
-
-p.horarios {
+section.fondotexto div.fondo-texto div.horarios-iframe p.horarios {
   font-family: "Times New Roman", Times, serif;
   color: black;
   text-align: left;
   margin: 0px 0px 0px 0px;
 }
-
-ul.horarios {
+section.fondotexto div.fondo-texto div.horarios-iframe ul.horarios {
   font-family: "Times New Roman", Times, serif;
   color: black;
   text-align: left;
   padding: 0px;
   list-style: none;
 }
-
-p.telefono {
+section.fondotexto div.fondo-texto div.horarios-iframe p.telefono {
   font-family: "Times New Roman", Times, serif;
   color: black;
   text-align: left;
@@ -527,13 +495,12 @@ p.telefono {
 }
 
 div.iframe {
-  height: auto;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
-
-iframe.iframe {
+div.iframe iframe.iframe {
+  height: 250px;
+  width: 600px;
   display: flex;
   border: none;
   border-radius: 30px;
@@ -555,14 +522,14 @@ iframe.iframe {
   header ul.flex-nav li a.nav {
     padding: 0px 16px;
   }
+  header img.cara {
+    display: flex;
+    width: 20px;
+  }
   ul.navdesplegable {
     height: auto;
     width: 75px;
     margin: 0px;
-  }
-  img.cara {
-    display: flex;
-    width: 20px;
   }
   img.imgdeslizable {
     width: 100%;
@@ -673,16 +640,16 @@ iframe.iframe {
     width: 40px;
   }
   div.foot {
-    padding: 0px;
+    padding: 20px 10px 0px 10px;
   }
-  p.tdcolor {
+  div.foot p.tdcolor {
     font-size: small;
   }
-  p.tdcolor img.redes {
+  div.foot p.tdcolor img.redes {
     height: 10px;
     width: 10px;
   }
-  div.none {
+  div.foot div.none {
     display: none;
   }
 }
@@ -763,17 +730,17 @@ iframe.iframe {
     display: flex;
     font-size: smaller;
   }
-  ul.horarios {
+  section.fondotexto ul.horarios {
     padding: 0px;
   }
-  ul.horarios li {
+  section.fondotexto ul.horarios li {
     font-size: smaller;
   }
-  p.telefono {
+  section.fondotexto p.telefono {
     font-size: smaller;
     color: black;
   }
-  iframe.iframe {
+  section.fondotexto iframe.iframe {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
