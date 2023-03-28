@@ -113,8 +113,10 @@ img.todaslasbebidas {
 }
 
 section.pruebabanner {
+  width: 100%;
+  height: auto;
   display: grid;
-  padding: 40px;
+  padding: 40px 0px 40px 0px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
@@ -143,6 +145,28 @@ section.pruebabanner div.cerdo {
   grid-area: cerdo;
   grid-column: 3/4;
   grid-row: 2;
+}
+section.pruebabanner img.suprema {
+  height: 220px;
+  width: auto;
+}
+section.pruebabanner img.novillo {
+  height: 220px;
+  width: auto;
+}
+section.pruebabanner img.elabora {
+  height: 440px;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+section.pruebabanner img.lechon {
+  height: 220px;
+  width: auto;
+}
+section.pruebabanner img.cerdo {
+  height: 220px;
+  width: auto;
 }
 
 section.prods {
@@ -390,50 +414,6 @@ div.mejores-ofertas div.ofertas input.registrofertas {
   padding: 10px 100px;
 }
 
-/* Formulario*/
-section.form-container {
-  background-color: rgba(3, 118, 108, 0.205);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 30px 0px 0px 0px;
-}
-section.form-container div.form-one {
-  display: flex;
-  flex-direction: column;
-}
-section.form-container div.form-one div.formredes {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-section.form-container div.form-two {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-}
-section.form-container div.form-two .form-h {
-  margin: 30px 0px 20px 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-section.form-container div.form-two input.inputform {
-  margin: 0px 0px 10px 0px;
-  padding: 10px 0px 10px 10px;
-}
-section.form-container div.form-two textarea.inputform {
-  padding: 10px 0px 10px 10px;
-}
-section.form-container div.form-two input.enviar {
-  background-color: rgba(0, 0, 0, 0.205);
-  margin: 10px 0px 20px 0px;
-  padding: 10px 0px 10px 0px;
-}
-
-div.formredes img {
-  height: 40px;
-  width: auto;
-}
-
 /* Nosotros*/
 section.fondotexto {
   display: flex;
@@ -506,12 +486,61 @@ div.iframe iframe.iframe {
   border-radius: 30px;
 }
 
-/* Responsive */
-/* Inicio */
-@media (min-width: 375px) and (max-width: 1439px) {
+/* Formulario*/
+section.form-container {
+  background-color: rgba(3, 118, 108, 0.205);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0px 0px 0px;
+}
+section.form-container div.form-one {
+  display: flex;
+  flex-direction: column;
+}
+section.form-container div.form-one div.formredes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+section.form-container div.form-two {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.form-container div.form-two .form-h {
+  margin: 30px 0px 20px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.form-container div.form-two input.inputform {
+  margin: 0px 0px 10px 0px;
+  padding: 10px 0px 10px 10px;
+}
+section.form-container div.form-two textarea.inputform {
+  padding: 10px 0px 10px 10px;
+}
+section.form-container div.form-two input.enviar {
+  background-color: rgba(0, 0, 0, 0.205);
+  margin: 10px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+div.formredes img {
+  height: 40px;
+  width: auto;
+}
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 767px) {
   header {
     display: flex;
     flex-direction: column;
+  }
+  header div.header h1 a {
+    width: 100%;
+    height: auto;
+    padding: 20px 50px 30px 50px;
+    font-size: 60px;
   }
   header ul.flex-nav {
     display: flex;
@@ -520,7 +549,7 @@ div.iframe iframe.iframe {
     font-size: 8px;
   }
   header ul.flex-nav li a.nav {
-    padding: 0px 16px;
+    padding: 0px 12px;
   }
   header img.cara {
     display: flex;
@@ -529,7 +558,7 @@ div.iframe iframe.iframe {
   ul.navdesplegable {
     height: auto;
     width: 75px;
-    margin: 0px;
+    margin: 5px 0px 0px 0px;
   }
   img.imgdeslizable {
     width: 100%;
@@ -539,29 +568,29 @@ div.iframe iframe.iframe {
     padding: 0px 5px 20px 5px;
   }
   section.pruebabanner {
-    padding: 0px 5px 15px 5px;
+    padding: 0px 0px 0px 0px;
     gap: 0px;
   }
   section.pruebabanner img.suprema {
-    height: 70px;
+    height: 61px;
     width: auto;
   }
   section.pruebabanner img.novillo {
-    height: 70px;
+    height: 61px;
     width: auto;
   }
   section.pruebabanner img.elabora {
-    height: 140px;
+    height: 122px;
     width: auto;
     margin: 0px;
     padding: 0px;
   }
   section.pruebabanner img.lechon {
-    height: 70px;
+    height: 61px;
     width: auto;
   }
   section.pruebabanner img.cerdo {
-    height: 70px;
+    height: 61px;
     width: auto;
   }
   section.prods {
@@ -602,7 +631,7 @@ div.iframe iframe.iframe {
     width: 50px;
   }
   .container-registrar {
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 0px 0px;
   }
   .container-registrar div.registrar {
     margin: 0px 0px 0px 0px;
@@ -654,10 +683,10 @@ div.iframe iframe.iframe {
   }
 }
 /*Almacen - Congelados - Bebidas */
-@media (min-width: 375px) and (max-width: 1439px) {
+@media (min-width: 320px) and (max-width: 767px) {
   img.marcas {
     display: flex;
-    height: 15px;
+    height: 10px;
     width: auto;
   }
   div.product-encontrados {
@@ -704,7 +733,7 @@ div.iframe iframe.iframe {
   }
 }
 /* Formulario */
-@media (min-width: 375px) and (max-width: 1439px) {
+@media (min-width: 320px) and (max-width: 767px) {
   section.form-container {
     display: flex;
     flex-direction: column;
@@ -725,7 +754,7 @@ div.iframe iframe.iframe {
   }
 }
 /* Nosotros */
-@media (min-width: 375px) and (max-width: 1439px) {
+@media (min-width: 320px) and (max-width: 767px) {
   section.fondotexto {
     display: flex;
     font-size: smaller;
@@ -742,5 +771,241 @@ div.iframe iframe.iframe {
   }
   section.fondotexto iframe.iframe {
     display: none;
+  }
+}
+/* TABLET */
+/* Inicio */
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  div.header h1 a {
+    width: 100%;
+    height: auto;
+    padding: 20px 50px 30px 50px;
+  }
+  ul.flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+  }
+  ul.flex-nav li a.nav {
+    padding: 0px 16px;
+  }
+  img.cara {
+    display: flex;
+    width: 20px;
+  }
+  ul.navdesplegable {
+    height: auto;
+    width: 120px;
+    margin: 10px 0px 0px 0px;
+  }
+  img.imgdeslizable {
+    width: 100%;
+    height: 150px;
+  }
+  img.todaslasbebidas {
+    padding: 0px 5px 20px 5px;
+  }
+  section.pruebabanner {
+    padding: 10px 70px 20px 70px;
+    gap: 0px;
+  }
+  section.pruebabanner img.suprema {
+    height: 120px;
+    width: auto;
+  }
+  section.pruebabanner img.novillo {
+    height: 120px;
+    width: auto;
+  }
+  section.pruebabanner img.elabora {
+    height: 240px;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  section.pruebabanner img.lechon {
+    height: 120px;
+    width: auto;
+  }
+  section.pruebabanner img.cerdo {
+    height: 120px;
+    width: auto;
+  }
+  section.prods {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  section.prods h5.tamaño-h {
+    font-size: medium;
+    height: 20px;
+    width: 150px;
+  }
+  section.prods img.prods {
+    height: 90px;
+    width: 180px;
+  }
+  section.descuentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px 0px 50px 0px;
+    gap: 10px;
+  }
+  section.descuentos p.dias {
+    font-size: small;
+  }
+  section.descuentos h4.rojo {
+    padding: 5px 10px 5px 10px;
+    font-size: medium;
+  }
+  section.descuentos img.bancos {
+    height: 40px;
+    width: 80px;
+  }
+  .container-registrar {
+    padding: 0px 0px 0px 0px;
+  }
+  .container-registrar div.registrar {
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .container-registrar div.registrar h5.registrate {
+    font-size: medium;
+  }
+  .container-registrar div.registrar input.registrarse {
+    margin-top: 15px;
+    font-size: smaller;
+  }
+  div.mejores-ofertas {
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  div.mejores-ofertas div.ofertas {
+    padding: 0px 15px;
+  }
+  div.mejores-ofertas div.ofertas h5.mejores {
+    font-size: medium;
+  }
+  div.mejores-ofertas div.ofertas h6.ofertas {
+    font-size: smaller;
+  }
+  div.mejores-ofertas div.ofertas input.registrofertas {
+    padding: 1px 50px;
+    font-size: x-small;
+  }
+  div.wpp {
+    margin: 0px;
+  }
+  div.wpp img.wpp {
+    height: auto;
+    width: 50px;
+  }
+  div.foot {
+    padding: 20px 10px 0px 10px;
+  }
+  div.foot p.tdcolor {
+    font-size: small;
+  }
+  div.foot p.tdcolor img.redes {
+    height: 15px;
+    width: 15px;
+  }
+}
+/*Almacen - Congelados - Bebidas */
+@media (min-width: 768px) and (max-width: 1200px) {
+  img.marcas {
+    display: flex;
+    height: 18px;
+    width: auto;
+  }
+  div.product-encontrados {
+    background-color: white;
+    padding: 20px;
+    margin: 0px 0px 30px 0px;
+    font-size: 20px;
+  }
+  div.prodtr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0px 0px 0px;
+  }
+  div.prodtr div.prod {
+    padding: 5px;
+    gap: 0px;
+    margin: 0px;
+  }
+  div.prodtr div.prod img.prueba {
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: auto;
+  }
+  div.prodtr div.prod p {
+    display: flex;
+    height: auto;
+    width: 150px;
+    font-size: x-small;
+  }
+  div.prodtr div.prod p.precio {
+    padding-top: 10px;
+    font-size: x-small;
+  }
+  div.prodtr div.prod img.prueba {
+    padding: 0px 0px 10px 0px;
+  }
+  div.mejores-ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Formulario */
+@media (min-width: 768px) and (max-width: 1200px) {
+  section.form-container {
+    margin: 10px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
+  }
+  section.form-container h5.telefono {
+    color: black;
+  }
+  div.formredes img {
+    height: 25px;
+    width: auto;
+  }
+}
+/* Nosotros */
+@media (min-width: 768px) and (max-width: 1200px) {
+  section.fondotexto {
+    display: flex;
+    font-size: smaller;
+  }
+  section.fondotexto ul.horarios {
+    padding: 0px;
+  }
+  section.fondotexto ul.horarios li {
+    font-size: smaller;
+  }
+  section.fondotexto p.telefono {
+    font-size: smaller;
+    color: black;
+  }
+  section.fondotexto iframe.iframe {
+    height: 125px;
+    width: 300px;
+    border-radius: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

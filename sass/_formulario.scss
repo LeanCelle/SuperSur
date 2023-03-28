@@ -1,0 +1,43 @@
+/* Formulario*/
+
+section.form-container {
+	background-color: rgba(3, 118, 108, 0.205);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+    div.form-one {
+        display: flex;
+        flex-direction: column;
+        div.formredes {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+    }
+    div.form-two {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        .form-h {
+            margin:30px 0px 20px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input.inputform {
+            margin: 0px 0px 10px 0px;
+            padding: 10px 0px 10px 10px; 
+        }
+        textarea.inputform {
+            padding: 10px 0px 10px 10px;
+        }
+        input.enviar {
+            background-color: rgba(0, 0, 0, 0.205);
+            margin: 10px 0px 20px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+    }
+}
+div.formredes img {
+    height: 40px;
+    width: auto;
+}

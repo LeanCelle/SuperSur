@@ -1,0 +1,310 @@
+/* INICIO */
+
+body.backgroundcolor {
+    background-color: rgb(230, 230, 177);
+    background-position:top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    background-color: rgba(168, 168, 88, 0.845);
+	height: auto;
+	width: 100%;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div.header {
+        color: white;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        h1 a {
+            color: white;
+            display: flex;
+            width: 100%;
+            height: 165px;
+            font-family: 'Cinzel', serif;
+            font-size: 80px;
+            align-items: center;
+        }
+    }
+    ul.flex-nav {
+        height: auto;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        li a.nav {
+            display: flex;
+            width: 100%;
+            height: auto;
+            font-size: larger;
+            padding:0px 30px;
+            align-items: center;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+
+ul.navdesplegable {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    background-color: transparent;
+    text-align: center;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.222);
+    & li:hover {
+        transform: scale(1.05);
+    }
+    a.navdesplegable {
+        display: block;
+        color: white;
+        padding: 10px 0px 10px 0px;
+    }
+}
+li:hover ul.navdesplegable {
+    display: block;
+}
+
+div.cara {
+    height: 50px;
+    display: flex;
+    border: none;
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: rgb(246, 255, 169);
+    }
+}
+img.imgdeslizable {
+    height: 470px;
+    width: 100%;
+}
+
+img.todaslasbebidas {
+    height: auto;
+    width: 100%;
+    padding: 40px 10px 40px 10px;
+}
+
+section.pruebabanner {
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 40px 0px 40px 0px;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    div.suprema {
+        grid-area: suprema;
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    div.novillo {
+        grid-area: novillo;
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+    div.elabora {
+        grid-area: elabora;
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    div.lechon {
+        grid-area: lechon;
+        grid-column: 3/4;
+        grid-row: 1
+    }
+    div.cerdo {
+        grid-area: cerdo;
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+    img.suprema {
+        height: 220px;
+        width: auto;
+    }
+    img.novillo {
+        height: 220px;
+        width: auto;
+    }
+    img.elabora {
+        height: 440px;
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+    img.lechon {
+        height: 220px;
+        width: auto;
+    }
+    img.cerdo {
+        height: 220px;
+        width: auto;
+    }
+}
+
+section.prods {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 50px 0px;
+    div.tacc {
+        background-color: white;
+        display: flex;
+        gap: 50px;
+        border-radius: 10px;
+        padding: 10px 0px 10px 15px;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    div.pan {
+        background-color: white;
+        display: flex;
+        gap: 50px;
+        padding: 10px 0px 10px 15px;
+        border-radius: 10px;
+        box-shadow: 10px;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    .h-prods {
+        display: flex;
+        align-items: center;
+    }
+    h5.tamaño-h {
+        font-size: medium;
+    }
+    img.prods {
+        height: 100px;
+        width: 200px;
+    }
+}
+
+section.descuentos {
+    display: grid;
+	padding: 70px 10px 70px 10px;
+    grid-template-areas: 
+    "ciudad icbc lanacion superville galicia" ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    div.ciudad {
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        grid-area: ciudad;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    div.icbc {
+        padding: 10px;
+        text-align:center;
+        background-color: white;
+        border-radius: 20px;
+        grid-area: icbc;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    div.lanacion {
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        grid-area: lanacion;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    div.superville {
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        grid-area: superville;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    div.galicia {
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        grid-area: galicia;
+        box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+    }
+    p.dias {
+        color: gray;
+        font-family: arial;
+    }
+    h4.rojo {
+        padding: 10px;
+        color: red;
+        font-family: arial;
+    }
+    img.bancos {
+        height:40px;
+        width: 80px;
+    }
+}
+
+div.wpp {
+    position: sticky;
+    bottom: 0%;
+    text-align: right;
+    margin: 0px 70px 0px 0px;
+}
+.container-registrar {
+    padding: 15px 0px 60px 0px;
+    div.registrar {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgb(255, 255, 255);
+        padding: 20px 0px 20px 0px;
+        margin: 0px 300px 0px 300px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.381);
+        h5.registrate {
+            text-align: center;
+        }
+        input.registrarse{
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+}
+
+div.foot {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px 0px 20px 0px;
+    &-tamaño {
+        text-align: center;
+        height: auto;
+        width: 200px;
+        p.tdcolor {
+            display: flex;
+            padding: 3px 0px;
+            justify-content: center;
+            img.redes {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+}

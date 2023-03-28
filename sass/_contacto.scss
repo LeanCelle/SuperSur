@@ -1,0 +1,71 @@
+/* Nosotros*/
+
+section.fondotexto {
+	display: flex;
+	padding: 0px 80px 0px 80px;
+    div.fondo-texto {
+        height: auto;
+        width: 100%;
+        margin: 80px 0px 80px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(3, 118, 108, 0.205);
+        padding: 0px 25px 0px 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.555);
+        p.pregunta {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            font-size: larger;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        p.respuesta {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+        }
+        div.horarios-iframe {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            p.direccion {
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                text-align: left;
+                margin: 0px 0px 0px 0px;
+            }
+            p.horarios {
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                text-align: left;
+                margin: 0px 0px 0px 0px;
+            }
+            ul.horarios {
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                text-align: left;
+                padding: 0px;
+                list-style: none;
+            }
+            p.telefono {
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                text-align: left;
+                margin: 0px 0px 30px 0px;
+            }
+        }
+    }
+}
+div.iframe {
+    display: flex;
+    justify-content: center;
+    iframe.iframe {
+        height: 250px;
+        width: 600px;
+        display: flex;
+        border: none;
+        border-radius: 30px;
+    }
+}

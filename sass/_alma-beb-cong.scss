@@ -1,0 +1,95 @@
+/* ALMACEN - CONGELADOS - BEBIDAS */
+
+.marcasseleccionadas {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+    .marcas-uno {
+        display: flex;
+        gap: 60px;
+        margin: 10px 20px 10px 0px;
+    }
+    .marcas-dos {
+        display: flex;
+        gap: 60px; 
+        margin: 10px 0px 10px 20px;
+    }
+    .marcas-tres {
+        display: flex;
+        gap: 60px;
+        margin: 10px 0px 10px 0px;
+    }
+}
+img.marcas {
+    display: flex;
+    height: 50px;
+    width: auto;
+}
+
+div.product-encontrados {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    justify-content: center;
+    display: flex;
+    p.p-prodencontrados {
+        display: flex;
+        margin: 0px;
+    }
+}
+div.prodtr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 50px 0px;
+    div.prod {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 30px 5px 30px 5px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+        &:hover {
+            transform: scale(1.01);
+        }
+        & img.prueba {
+            justify-content: center;
+            display: flex;
+            width: 250px;
+            height: auto;
+            padding: 10px 10px 20px 10px;
+        }
+        & p {
+            justify-content: center;
+            display: flex;
+            width: 250px;
+            height: auto;
+            text-align: center;
+        }
+        p.precio {
+            padding-top: 40px;
+        }
+    }
+}
+
+div.mejores-ofertas {
+    color: black;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 248);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    div.ofertas {
+        padding: 0px 15px;
+        h6.ofertas {
+            text-align:center;
+        }
+        input.registrofertas {
+            padding: 10px 100px
+        }
+    }
+}
