@@ -9,14 +9,15 @@
 
 /* INICIO */
 body.backgroundcolor {
-  background-color: rgb(230, 230, 177);
+  background-color: rgba(210, 225, 49, 0.49);
   background-position: top center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 header {
-  background-color: rgba(168, 168, 88, 0.845);
+  background: rgb(88, 99, 44);
+  background: linear-gradient(336deg, white 21%, rgb(23, 23, 23) 21%);
   height: auto;
   width: 100%;
   display: flex;
@@ -117,7 +118,7 @@ section.pruebabanner {
   height: auto;
   display: grid;
   padding: 40px 0px 40px 0px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
 }
@@ -196,11 +197,11 @@ section.prods .h-prods {
   align-items: center;
 }
 section.prods h5.tamaño-h {
-  font-size: medium;
+  font-size: large;
 }
 section.prods img.prods {
-  height: 100px;
-  width: 200px;
+  height: 120px;
+  width: 300px;
 }
 
 section.descuentos {
@@ -215,7 +216,7 @@ section.descuentos div.ciudad {
   padding: 10px;
   text-align: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 0px 20px 0px;
   grid-area: ciudad;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
@@ -223,7 +224,7 @@ section.descuentos div.icbc {
   padding: 10px;
   text-align: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 0px 20px 0px;
   grid-area: icbc;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
@@ -231,7 +232,7 @@ section.descuentos div.lanacion {
   padding: 10px;
   text-align: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 0px 20px 0px;
   grid-area: lanacion;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
@@ -239,7 +240,7 @@ section.descuentos div.superville {
   padding: 10px;
   text-align: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 0px 20px 0px;
   grid-area: superville;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
@@ -247,7 +248,7 @@ section.descuentos div.galicia {
   padding: 10px;
   text-align: center;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 0px 20px 0px;
   grid-area: galicia;
   box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
 }
@@ -356,7 +357,7 @@ div.product-encontrados {
 }
 div.product-encontrados p.p-prodencontrados {
   display: flex;
-  margin: 0px;
+  margin: 20px 0px 20px 0px;
 }
 
 div.prodtr {
@@ -531,8 +532,11 @@ div.formredes img {
 }
 
 /* MOBILE */
-@media (min-width: 320px) and (max-width: 767px) {
+/* INICIO */
+@media (max-width: 576px) {
   header {
+    background: rgb(88, 99, 44);
+    background: linear-gradient(360deg, rgba(34, 51, 32, 0.863) 21%, rgb(23, 23, 23) 21%);
     display: flex;
     flex-direction: column;
   }
@@ -552,15 +556,21 @@ div.formredes img {
     padding: 0px 12px;
   }
   header img.cara {
+    display: none;
+  }
+  header img.carawhite {
     display: flex;
     width: 20px;
   }
   ul.navdesplegable {
     height: auto;
     width: 75px;
-    margin: 5px 0px 0px 0px;
+    margin: 3px 0px 0px 0px;
   }
-  img.imgdeslizable {
+  div.menudinamico {
+    margin: 20px 0px 10px 0px;
+  }
+  div.menudinamico img.imgdeslizable {
     width: 100%;
     height: 150px;
   }
@@ -683,14 +693,18 @@ div.formredes img {
   }
 }
 /*Almacen - Congelados - Bebidas */
-@media (min-width: 320px) and (max-width: 767px) {
-  img.marcas {
+@media (max-width: 576px) {
+  section.marcasseleccionadas {
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px 30px 0px;
+  }
+  section.marcasseleccionadas img.marcas {
     display: flex;
     height: 10px;
     width: auto;
   }
   div.product-encontrados {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     margin: 0px 0px 30px 0px;
     font-size: 15px;
@@ -733,7 +747,7 @@ div.formredes img {
   }
 }
 /* Formulario */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 576px) {
   section.form-container {
     display: flex;
     flex-direction: column;
@@ -754,7 +768,7 @@ div.formredes img {
   }
 }
 /* Nosotros */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 576px) {
   section.fondotexto {
     display: flex;
     font-size: smaller;
@@ -775,8 +789,10 @@ div.formredes img {
 }
 /* TABLET */
 /* Inicio */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 577px) and (max-width: 1200px) {
   header {
+    background: rgb(88, 99, 44);
+    background: linear-gradient(360deg, rgba(34, 51, 32, 0.863) 17%, rgb(23, 23, 23) 17%);
     display: flex;
     flex-direction: column;
   }
@@ -795,45 +811,51 @@ div.formredes img {
     padding: 0px 16px;
   }
   img.cara {
+    display: none;
+  }
+  img.carawhite {
     display: flex;
     width: 20px;
   }
   ul.navdesplegable {
     height: auto;
     width: 120px;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
-  img.imgdeslizable {
+  div.menudinamico {
+    margin: 30px 0px 0px 0px;
+  }
+  div.menudinamico img.imgdeslizable {
     width: 100%;
     height: 150px;
   }
   img.todaslasbebidas {
-    padding: 0px 5px 20px 5px;
+    padding: 20px 5px 20px 5px;
   }
   section.pruebabanner {
-    padding: 10px 70px 20px 70px;
+    padding: 10px 0px 20px 0px;
     gap: 0px;
   }
   section.pruebabanner img.suprema {
-    height: 120px;
+    height: 110px;
     width: auto;
   }
   section.pruebabanner img.novillo {
-    height: 120px;
+    height: 110px;
     width: auto;
   }
   section.pruebabanner img.elabora {
-    height: 240px;
+    height: 220px;
     width: auto;
     margin: 0px;
     padding: 0px;
   }
   section.pruebabanner img.lechon {
-    height: 120px;
+    height: 110px;
     width: auto;
   }
   section.pruebabanner img.cerdo {
-    height: 120px;
+    height: 110px;
     width: auto;
   }
   section.prods {
@@ -924,7 +946,7 @@ div.formredes img {
   }
 }
 /*Almacen - Congelados - Bebidas */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 577px) and (max-width: 1200px) {
   img.marcas {
     display: flex;
     height: 18px;
@@ -974,7 +996,7 @@ div.formredes img {
   }
 }
 /* Formulario */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 577px) and (max-width: 1200px) {
   section.form-container {
     margin: 10px 10px 0px 10px;
     padding: 20px 10px 0px 10px;
@@ -988,7 +1010,7 @@ div.formredes img {
   }
 }
 /* Nosotros */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 577px) and (max-width: 1200px) {
   section.fondotexto {
     display: flex;
     font-size: smaller;
@@ -1007,5 +1029,521 @@ div.formredes img {
     height: 125px;
     width: 300px;
     border-radius: 10px;
+  }
+}
+/* DESKTOP */
+/* INICIO */
+@media (min-width: 1201px) {
+  body.backgroundcolor {
+    background-color: rgba(210, 225, 49, 0.49);
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  header {
+    background: rgb(88, 99, 44);
+    background: linear-gradient(336deg, white 21%, rgb(23, 23, 23) 21%);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header div.header {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  header div.header h1 a {
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 165px;
+    font-family: "Cinzel", serif;
+    font-size: 80px;
+    align-items: center;
+  }
+  header ul.flex-nav {
+    height: auto;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+  }
+  header ul.flex-nav li a.nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: larger;
+    padding: 0px 30px;
+    align-items: center;
+  }
+  header ul.flex-nav li a.nav:hover {
+    transform: scale(1.05);
+  }
+  ul.navdesplegable {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    background-color: transparent;
+    text-align: center;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.222);
+  }
+  ul.navdesplegable li:hover {
+    transform: scale(1.05);
+  }
+  ul.navdesplegable a.navdesplegable {
+    display: block;
+    color: white;
+    padding: 10px 0px 10px 0px;
+  }
+  li:hover ul.navdesplegable {
+    display: block;
+  }
+  div.cara {
+    height: 50px;
+    display: flex;
+    border: none;
+  }
+  div.cara:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  div.cara img.carawhite {
+    display: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(246, 255, 169);
+  }
+  img.imgdeslizable {
+    height: 470px;
+    width: 100%;
+  }
+  img.todaslasbebidas {
+    height: auto;
+    width: 100%;
+    padding: 40px 10px 40px 10px;
+  }
+  section.pruebabanner {
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 40px 0px 40px 0px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+  section.pruebabanner div.suprema {
+    grid-area: suprema;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  section.pruebabanner div.novillo {
+    grid-area: novillo;
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  section.pruebabanner div.elabora {
+    grid-area: elabora;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  section.pruebabanner div.lechon {
+    grid-area: lechon;
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  section.pruebabanner div.cerdo {
+    grid-area: cerdo;
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+  section.pruebabanner img.suprema {
+    height: 220px;
+    width: auto;
+  }
+  section.pruebabanner img.novillo {
+    height: 220px;
+    width: auto;
+  }
+  section.pruebabanner img.elabora {
+    height: 440px;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  section.pruebabanner img.lechon {
+    height: 220px;
+    width: auto;
+  }
+  section.pruebabanner img.cerdo {
+    height: 220px;
+    width: auto;
+  }
+  section.prods {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 50px 0px;
+  }
+  section.prods div.tacc {
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 15px;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.prods div.pan {
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    padding: 10px 0px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 10px;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.prods .h-prods {
+    display: flex;
+    align-items: center;
+  }
+  section.prods h5.tamaño-h {
+    font-size: large;
+  }
+  section.prods img.prods {
+    height: 120px;
+    width: 300px;
+  }
+  section.descuentos {
+    display: grid;
+    padding: 70px 10px 70px 10px;
+    grid-template-areas: "ciudad icbc lanacion superville galicia";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  section.descuentos div.ciudad {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+    grid-area: ciudad;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.descuentos div.icbc {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+    grid-area: icbc;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.descuentos div.lanacion {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+    grid-area: lanacion;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.descuentos div.superville {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+    grid-area: superville;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.descuentos div.galicia {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+    grid-area: galicia;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.descuentos p.dias {
+    color: gray;
+    font-family: arial;
+  }
+  section.descuentos h4.rojo {
+    padding: 10px;
+    color: red;
+    font-family: arial;
+  }
+  section.descuentos img.bancos {
+    height: 40px;
+    width: 80px;
+  }
+  div.wpp {
+    position: sticky;
+    bottom: 0%;
+    text-align: right;
+    margin: 0px 70px 0px 0px;
+  }
+  .container-registrar {
+    padding: 15px 0px 60px 0px;
+  }
+  .container-registrar div.registrar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0px 20px 0px;
+    margin: 0px 300px 0px 300px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.381);
+  }
+  .container-registrar div.registrar h5.registrate {
+    text-align: center;
+  }
+  .container-registrar div.registrar input.registrarse {
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(67, 93, 29, 0.512);
+    padding: 5px;
+    margin-top: 15px;
+  }
+  div.foot {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px 0px 20px 0px;
+  }
+  div.foot-tamaño {
+    text-align: center;
+    height: auto;
+    width: 200px;
+  }
+  div.foot-tamaño p.tdcolor {
+    display: flex;
+    padding: 3px 0px;
+    justify-content: center;
+  }
+  div.foot-tamaño p.tdcolor img.redes {
+    height: 15px;
+    width: 15px;
+  }
+}
+/* ALMACEN - CONGELADOS - BEBIDAS */
+@media (min-width: 1201px) {
+  .marcasseleccionadas {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 50px 0px;
+  }
+  .marcasseleccionadas .marcas-uno {
+    display: flex;
+    gap: 60px;
+    margin: 10px 20px 10px 0px;
+  }
+  .marcasseleccionadas .marcas-dos {
+    display: flex;
+    gap: 60px;
+    margin: 10px 0px 10px 20px;
+  }
+  .marcasseleccionadas .marcas-tres {
+    display: flex;
+    gap: 60px;
+    margin: 10px 0px 10px 0px;
+  }
+  img.marcas {
+    display: flex;
+    height: 50px;
+    width: auto;
+  }
+  div.product-encontrados {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    justify-content: center;
+    display: flex;
+  }
+  div.product-encontrados p.p-prodencontrados {
+    display: flex;
+    margin: 20px 0px 20px 0px;
+  }
+  div.prodtr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 50px 0px;
+  }
+  div.prodtr div.prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px 5px 30px 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  }
+  div.prodtr div.prod:hover {
+    transform: scale(1.01);
+  }
+  div.prodtr div.prod img.prueba {
+    justify-content: center;
+    display: flex;
+    width: 250px;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+  }
+  div.prodtr div.prod p {
+    justify-content: center;
+    display: flex;
+    width: 250px;
+    height: auto;
+    text-align: center;
+  }
+  div.prodtr div.prod p.precio {
+    padding-top: 40px;
+  }
+  div.mejores-ofertas {
+    color: black;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 248);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+  }
+  div.mejores-ofertas div.ofertas {
+    padding: 0px 15px;
+  }
+  div.mejores-ofertas div.ofertas h6.ofertas {
+    text-align: center;
+  }
+  div.mejores-ofertas div.ofertas input.registrofertas {
+    padding: 10px 100px;
+  }
+}
+/* NOSOTROS */
+@media (min-width: 1201px) {
+  section.fondotexto {
+    display: flex;
+    padding: 0px 80px 0px 80px;
+  }
+  section.fondotexto div.fondo-texto {
+    height: auto;
+    width: 100%;
+    margin: 80px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(3, 118, 108, 0.205);
+    padding: 0px 25px 0px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.555);
+  }
+  section.fondotexto div.fondo-texto p.pregunta {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  section.fondotexto div.fondo-texto p.respuesta {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+  }
+  section.fondotexto div.fondo-texto div.horarios-iframe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  section.fondotexto div.fondo-texto div.horarios-iframe p.direccion {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+  section.fondotexto div.fondo-texto div.horarios-iframe p.horarios {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+  section.fondotexto div.fondo-texto div.horarios-iframe ul.horarios {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: left;
+    padding: 0px;
+    list-style: none;
+  }
+  section.fondotexto div.fondo-texto div.horarios-iframe p.telefono {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+  div.iframe {
+    display: flex;
+    justify-content: center;
+  }
+  div.iframe iframe.iframe {
+    height: 250px;
+    width: 600px;
+    display: flex;
+    border: none;
+    border-radius: 30px;
+  }
+}
+/* FORMULARIO */
+@media (min-width: 1201px) {
+  section.form-container {
+    background-color: rgba(3, 118, 108, 0.205);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+  }
+  section.form-container div.form-one {
+    display: flex;
+    flex-direction: column;
+  }
+  section.form-container div.form-one div.formredes {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  section.form-container div.form-two {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  section.form-container div.form-two .form-h {
+    margin: 30px 0px 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  section.form-container div.form-two input.inputform {
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 10px;
+  }
+  section.form-container div.form-two textarea.inputform {
+    padding: 10px 0px 10px 10px;
+  }
+  section.form-container div.form-two input.enviar {
+    background-color: rgba(0, 0, 0, 0.205);
+    margin: 10px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
+  }
+  div.formredes img {
+    height: 40px;
+    width: auto;
   }
 }/*# sourceMappingURL=main.css.map */

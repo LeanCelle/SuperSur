@@ -1,7 +1,7 @@
 /* INICIO */
 
 body.backgroundcolor {
-    background-color: rgb(230, 230, 177);
+    background-color: rgba(210, 225, 49, 0.49);
     background-position:top center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -9,10 +9,11 @@ body.backgroundcolor {
 
 
 header {
-    background-color: rgba(168, 168, 88, 0.845);
-	height: auto;
-	width: 100%;
-	display: flex;
+    background: rgb(88,99,44);
+    background: linear-gradient(336deg, white 21%, rgb(23, 23, 23) 21%);
+    height: auto;
+    width: 100%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     div.header {
@@ -109,7 +110,7 @@ section.pruebabanner {
     height: auto;
     display: grid;
     padding: 40px 0px 40px 0px;
-	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     div.suprema {
@@ -187,17 +188,17 @@ section.prods {
         align-items: center;
     }
     h5.tamaño-h {
-        font-size: medium;
+        font-size: large;
     }
     img.prods {
-        height: 100px;
-        width: 200px;
+        height: 120px;
+        width: 300px;
     }
 }
 
 section.descuentos {
     display: grid;
-	padding: 70px 10px 70px 10px;
+    padding: 70px 10px 70px 10px;
     grid-template-areas: 
     "ciudad icbc lanacion superville galicia" ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -207,7 +208,7 @@ section.descuentos {
         padding: 10px;
         text-align: center;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 20px 0px 20px 0px;
         grid-area: ciudad;
         box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
     }
@@ -215,7 +216,7 @@ section.descuentos {
         padding: 10px;
         text-align:center;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 20px 0px 20px 0px;
         grid-area: icbc;
         box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
     }
@@ -223,7 +224,7 @@ section.descuentos {
         padding: 10px;
         text-align: center;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 20px 0px 20px 0px;
         grid-area: lanacion;
         box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
     }
@@ -231,7 +232,7 @@ section.descuentos {
         padding: 10px;
         text-align: center;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 20px 0px 20px 0px;
         grid-area: superville;
         box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
     }
@@ -239,7 +240,7 @@ section.descuentos {
         padding: 10px;
         text-align: center;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 20px 0px 20px 0px;
         grid-area: galicia;
         box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
     }
@@ -308,3 +309,4 @@ div.foot {
         }
     }
 }
+
