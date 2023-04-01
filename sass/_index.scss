@@ -115,11 +115,13 @@ section.pruebabanner {
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     div.suprema {
+        justify-self: end;
         grid-area: suprema;
         grid-column: 1/2;
         grid-row: 1;
     }
     div.novillo {
+        justify-self: end;
         grid-area: novillo;
         grid-column: 1/2;
         grid-row: 2;
@@ -130,11 +132,13 @@ section.pruebabanner {
         grid-row: 1/3;
     }
     div.lechon {
+        justify-self: start;
         grid-area: lechon;
         grid-column: 3/4;
         grid-row: 1
     }
     div.cerdo {
+        justify-self: start;
         grid-area: cerdo;
         grid-column: 3/4;
         grid-row: 2;
