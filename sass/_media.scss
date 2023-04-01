@@ -4,14 +4,17 @@
 
 @media (max-width: 576px) {
     header {
+        position: sticky;
+        top: 0%;
+        z-index: 1;
         background: rgb(88,99,44);
-        background: linear-gradient(360deg, rgba(34, 51, 32, 0.205) 21%, rgba(23, 23, 23, 0.44) 21%);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.282) 21%, rgba(23, 23, 23, 0.4) 21%);
         display: flex;
         flex-direction: column;
         div.header h1 a {
             width: 100%;
             height: auto;
-            padding: 20px 50px 30px 50px;
+            padding: 10px 50px 10px 50px;
             font-size: 60px;
         }
         ul.flex-nav {
@@ -20,7 +23,7 @@
             justify-content: center;
             font-size: 8px;
             li a.nav {
-                padding: 0px 12px 20px 12px;
+                padding: 0px 12px 5px 12px;
             }
         }
         img.cara {
@@ -28,14 +31,14 @@
         }
         img.carawhite {
             display: flex;
-            padding: 10px 0px 3px 0px;
+            padding: 15px 0px 0px 0px;
             width: 20px;
         }
     }
     ul.navdesplegable {
         height: auto;
         width: 75px;
-        margin: -16px 0px 0px -4px;
+        margin: -8px 0px 0px -4px;
     }
 
     div.img-supermercado {
@@ -135,6 +138,11 @@
                 font-size: small;
             }
             input.registrarse{
+                text-align: center;
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(255, 255, 255);
+                padding: 3px;
                 margin-top: 15px;
                 font-size: x-small;
             }
@@ -239,6 +247,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        input.registrofertas:focus {
+            border-color: white;
+            box-shadow: 0px 0px 4px 4px rgba(0, 72, 255, 0.351);
+        }
     }
 }
 
@@ -302,6 +314,9 @@
 
 @media (min-width: 577px) and (max-width: 1200px) {
     header {
+        position: sticky;
+        top: 0%;
+        z-index: 1;
         background: rgb(88,99,44);
         background: linear-gradient(360deg, rgba(34, 51, 32, 0.205) 21%, rgba(23, 23, 23, 0.44) 21%);
         display: flex;
@@ -309,7 +324,7 @@
         div.header h1 a {
             width: 100%;
             height: auto;
-            padding: 20px 50px 30px 50px;
+            padding: 10px 50px 10px 50px;
         }
         ul.flex-nav {
             display: flex;
@@ -317,7 +332,7 @@
             justify-content: center;
             font-size: 12px;
             li a.nav {
-                padding: 0px 12px 30px 12px;
+                padding: 0px 12px 10px 12px;
             }
         }
         img.cara {
@@ -325,14 +340,14 @@
         }
         img.carawhite {
             display: flex;
-            padding: 0px 0px 3px 0px;
+            padding: 7px 0px 0px 0px;
             width: 20px;
         }
     }
     ul.navdesplegable {
         height: auto;
         width: 120px;
-        margin: -27px 0px 0px -17px;
+        margin: -8px 0px 0px -17px;
     }
 
     div.img-supermercado {
@@ -431,6 +446,11 @@
                 font-size: medium;
             }
             input.registrarse{
+                text-align: center;
+                border-style: solid;
+                border-radius: 5px;
+                border-color: rgb(255, 255, 255);
+                padding: 4px;
                 margin-top: 15px;
                 font-size: smaller;
             }
@@ -529,8 +549,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        input.registrofertas:focus {
+            border-color: white;
+            box-shadow: 0px 0px 5px 5px rgba(0, 72, 255, 0.351);
+        }
     }
 }
+
 
 
 /* Formulario */
@@ -594,8 +619,11 @@
     
     
     header {
+        position: sticky;
+        top: 0%;
+        z-index: 1;
         background: rgb(255,255,255);
-        background: linear-gradient(336deg, rgba(0, 0, 0, 0.563) 22%, white 22%, white 64%, rgba(0, 0, 0, 0.563) 64%);
+        background: linear-gradient(336deg, rgba(0, 0, 0, 0.563) 22%, rgba(255, 255, 255, 0) 22%, rgba(255, 255, 255, 0.374) 64%, rgba(0, 0, 0, 0.563) 64%);
         height: auto;
         width: 100%;
         display: flex;
@@ -625,6 +653,7 @@
             margin: 0px;
             padding: 0px;
             li a.nav {
+                cursor: pointer;
                 color: rgb(54, 54, 54);
                 display: flex;
                 width: 100%;
@@ -805,44 +834,69 @@
         justify-items: center;
         align-items: center;
         div.ciudad {
+            cursor: pointer;
             padding: 10px;
             text-align: center;
             background-color: white;
             border-radius: 20px 0px 20px 0px;
             grid-area: ciudad;
             box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+            &:hover {
+                box-shadow: 0px 0px 10px 10px rgba(39, 39, 39, 0.251);
+                transition: 1s;
+            }
         }
         div.icbc {
+            cursor: pointer;
             padding: 10px;
             text-align:center;
             background-color: white;
             border-radius: 20px 0px 20px 0px;
             grid-area: icbc;
             box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+            &:hover {
+                box-shadow: 0px 0px 10px 10px rgba(39, 39, 39, 0.251);
+                transition: 1s;
+            }
         }
         div.lanacion {
+            cursor: pointer;
             padding: 10px;
             text-align: center;
             background-color: white;
             border-radius: 20px 0px 20px 0px;
             grid-area: lanacion;
             box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+            &:hover {
+                box-shadow: 0px 0px 10px 10px rgba(39, 39, 39, 0.251);
+                transition: 1s;
+            }
         }
         div.superville {
+            cursor: pointer;
             padding: 10px;
             text-align: center;
             background-color: white;
             border-radius: 20px 0px 20px 0px;
             grid-area: superville;
             box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+            &:hover {
+                box-shadow: 0px 0px 10px 10px rgba(39, 39, 39, 0.251);
+                transition: 1s;
+            }
         }
         div.galicia {
+            cursor: pointer;
             padding: 10px;
             text-align: center;
             background-color: white;
             border-radius: 20px 0px 20px 0px;
             grid-area: galicia;
             box-shadow: 0px 0px 2.5px 2.5px  rgba(0, 0, 0, 0.175);
+            &:hover {
+                box-shadow: 0px 0px 10px 10px rgba(39, 39, 39, 0.251);
+                transition: 1s;
+            }
         }
         p.dias {
             color: gray;
@@ -872,7 +926,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            background-color:rgb(255, 255, 255);
+            background-color:rgb(249, 247, 247);
             padding: 20px 0px 20px 0px;
             margin: 0px 300px 0px 300px;
             border-radius: 30px;
@@ -883,7 +937,8 @@
             input.registrarse{
                 text-align: center;
                 border-style: solid;
-                border-color: rgba(67, 93, 29, 0.512);
+                border-radius: 5px;
+                border-color: rgb(255, 255, 255);
                 padding: 5px;
                 margin-top: 15px;
             }
@@ -1007,7 +1062,11 @@
                 text-align:center;
             }
             input.registrofertas {
-                padding: 10px 100px
+                padding: 10px 100px;
+                &:focus {
+                    border-color: white;
+                    box-shadow: 0px 0px 8px 8px rgba(0, 72, 255, 0.351);
+                } 
             }
         }
     } 
@@ -1120,12 +1179,15 @@
             }
             input.inputform {
                 margin: 0px 0px 10px 0px;
-                padding: 10px 0px 10px 10px; 
+                padding: 10px 0px 10px 10px;
             }
             textarea.inputform {
                 padding: 10px 0px 10px 10px;
             }
             input.enviar {
+                border-style: solid;
+                border-color: white;
+                color: white;
                 background-color: rgba(0, 0, 0, 0.205);
                 margin: 10px 0px 20px 0px;
                 padding: 10px 0px 10px 0px;
