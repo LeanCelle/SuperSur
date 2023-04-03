@@ -1,18 +1,9 @@
 /* INICIO */
 
-body.backgroundcolor {
-    background-color: rgba(210, 225, 49, 0.49);
-    background-position:top center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
 
 header {
     background: rgb(88,99,44);
     background: linear-gradient(336deg, white 21%, rgb(23, 23, 23) 21%);
-    height: auto;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

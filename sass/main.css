@@ -7,19 +7,13 @@
   font-family: "Fraunces", serif;
 }
 
+/* VARIABLES */
+/* MIXIN */
+/* IMPORT */
 /* INICIO */
-body.backgroundcolor {
-  background-color: rgba(210, 225, 49, 0.49);
-  background-position: top center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
 header {
   background: rgb(88, 99, 44);
   background: linear-gradient(336deg, white 21%, rgb(23, 23, 23) 21%);
-  height: auto;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -538,53 +532,48 @@ div.formredes img {
 /* MOBILE */
 /* INICIO */
 @media (max-width: 576px) {
+  body.backgroundcolor {
+    background-color: rgba(210, 225, 49, 0.49);
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
   header {
     position: sticky;
     top: 0%;
     z-index: 1;
     background: rgb(88, 99, 44);
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.282) 21%, rgba(23, 23, 23, 0.4) 21%);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.282) 29%, rgba(23, 23, 23, 0.4) 29%);
     display: flex;
     flex-direction: column;
   }
   header div.header h1 a {
     width: 100%;
     height: auto;
-    padding: 10px 50px 10px 50px;
-    font-size: 60px;
+    padding: 5px 50px 5px 50px;
+    font-size: 40px;
   }
   header ul.flex-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 8px;
+    font-size: 9px;
   }
   header ul.flex-nav li a.nav {
-    padding: 0px 12px 5px 12px;
+    padding: 0px 10px 0px 10px;
   }
   header img.cara {
     display: none;
   }
   header img.carawhite {
     display: flex;
-    padding: 15px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     width: 20px;
   }
   ul.navdesplegable {
-    height: auto;
     width: 75px;
-    margin: -4px 0px 0px -4px;
-  }
-  div.img-supermercado {
-    display: none;
-  }
-  div.img-supermercado img.img-supermercado {
-    display: none;
-  }
-  div.img-supermercado img.img-supermercado-mobile {
-    display: none;
-    width: 100%;
     height: auto;
+    margin: 2px 0px 0px -3.8px;
   }
   div.menudinamico {
     margin: 0px 0px 10px 0px;
@@ -602,47 +591,48 @@ div.formredes img {
   }
   section.pruebabanner img.suprema {
     justify-self: end;
-    height: 61px;
     width: auto;
+    height: 62px;
   }
   section.pruebabanner img.novillo {
     justify-self: end;
-    height: 61px;
     width: auto;
+    height: 62px;
   }
   section.pruebabanner img.elabora {
-    height: 122px;
     width: auto;
+    height: 124px;
     margin: 0px;
     padding: 0px;
   }
   section.pruebabanner img.lechon {
     justify-self: start;
-    height: 61px;
     width: auto;
+    height: 62px;
   }
   section.pruebabanner img.cerdo {
     justify-self: start;
-    height: 61px;
     width: auto;
+    height: 62px;
   }
   section.prods {
-    height: auto;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 20px 0px;
     align-items: center;
   }
   section.prods h5.tamaño-h {
     font-size: small;
-    height: 20px;
     width: 150px;
+    height: 20px;
     margin: 0px;
   }
   section.prods img.prods {
-    height: 50px;
     width: 100px;
+    height: 50px;
   }
   section.descuentos {
     display: flex;
@@ -656,12 +646,12 @@ div.formredes img {
     font-size: x-small;
   }
   section.descuentos h4.rojo {
-    padding: 5px 10px 5px 10px;
+    padding: 2px 0px 2px 0px;
     font-size: smaller;
   }
   section.descuentos img.bancos {
+    width: 60px;
     height: 20px;
-    width: 50px;
   }
   .container-registrar {
     padding: 0px 0px 0px 0px;
@@ -703,8 +693,8 @@ div.formredes img {
     margin: 0px;
   }
   div.wpp img.wpp {
-    height: auto;
     width: 40px;
+    height: auto;
   }
   div.foot {
     padding: 20px 10px 0px 10px;
@@ -713,8 +703,8 @@ div.formredes img {
     font-size: small;
   }
   div.foot p.tdcolor img.redes {
-    height: 10px;
-    width: 10px;
+    width: 11px;
+    height: 11px;
   }
   div.foot div.none {
     display: none;
@@ -728,8 +718,8 @@ div.formredes img {
   }
   section.marcasseleccionadas img.marcas {
     display: flex;
-    height: 10px;
     width: auto;
+    height: 14px;
   }
   div.product-encontrados {
     background-color: rgba(210, 225, 49, 0);
@@ -757,8 +747,8 @@ div.formredes img {
   }
   div.prodtr div.prod p {
     display: flex;
-    height: auto;
     width: 150px;
+    height: auto;
     font-size: x-small;
   }
   div.prodtr div.prod p.precio {
@@ -795,15 +785,19 @@ div.formredes img {
     margin: 20px 0px 10px 0px;
   }
   div.formredes img {
-    height: 20px;
     width: auto;
+    height: 20px;
   }
 }
 /* Nosotros */
 @media (max-width: 576px) {
   section.fondotexto {
     display: flex;
-    font-size: smaller;
+    font-size: medium;
+    padding: 0px 10px;
+  }
+  section.fondotexto div.fondo-texto {
+    margin: 40px 0px;
   }
   section.fondotexto ul.horarios {
     padding: 0px;
@@ -822,10 +816,13 @@ div.formredes img {
 /* TABLET */
 /* Inicio */
 @media (min-width: 577px) and (max-width: 1200px) {
+  body.backgroundcolor {
+    background-color: rgba(210, 225, 49, 0.49);
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
   header {
-    position: sticky;
-    top: 0%;
-    z-index: 1;
     background: rgb(88, 99, 44);
     background: linear-gradient(360deg, rgba(34, 51, 32, 0.205) 21%, rgba(23, 23, 23, 0.44) 21%);
     display: flex;
@@ -854,8 +851,9 @@ div.formredes img {
     width: 20px;
   }
   ul.navdesplegable {
-    height: auto;
+    z-index: 1;
     width: 120px;
+    height: auto;
     margin: -8px 0px 0px -17px;
   }
   div.img-supermercado {
@@ -885,33 +883,33 @@ div.formredes img {
   }
   section.pruebabanner img.suprema {
     justify-self: end;
-    height: 130px;
     width: auto;
+    height: 130px;
   }
   section.pruebabanner img.novillo {
     justify-self: end;
-    height: 130px;
     width: auto;
+    height: 130px;
   }
   section.pruebabanner img.elabora {
-    height: 260px;
     width: auto;
+    height: 260px;
     margin: 0px;
     padding: 0px;
   }
   section.pruebabanner img.lechon {
     justify-self: start;
-    height: 130px;
     width: auto;
+    height: 130px;
   }
   section.pruebabanner img.cerdo {
     justify-self: start;
-    height: 130px;
     width: auto;
+    height: 130px;
   }
   section.prods {
-    height: auto;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -919,12 +917,12 @@ div.formredes img {
   }
   section.prods h5.tamaño-h {
     font-size: medium;
-    height: 20px;
     width: 150px;
+    height: 20px;
   }
   section.prods img.prods {
-    height: 90px;
     width: 180px;
+    height: 90px;
   }
   section.descuentos {
     display: flex;
@@ -942,8 +940,8 @@ div.formredes img {
     font-size: medium;
   }
   section.descuentos img.bancos {
-    height: 40px;
     width: 80px;
+    height: 40px;
   }
   .container-registrar {
     padding: 0px 0px 0px 0px;
@@ -987,8 +985,8 @@ div.formredes img {
     margin: 0px;
   }
   div.wpp img.wpp {
-    height: auto;
     width: 50px;
+    height: auto;
   }
   div.foot {
     padding: 20px 10px 0px 10px;
@@ -997,16 +995,16 @@ div.formredes img {
     font-size: small;
   }
   div.foot p.tdcolor img.redes {
-    height: 15px;
     width: 15px;
+    height: 15px;
   }
 }
 /*Almacen - Congelados - Bebidas */
 @media (min-width: 577px) and (max-width: 1200px) {
   img.marcas {
     display: flex;
-    height: 18px;
     width: auto;
+    height: 18px;
   }
   div.product-encontrados {
     background-color: white;
@@ -1034,8 +1032,8 @@ div.formredes img {
   }
   div.prodtr div.prod p {
     display: flex;
-    height: auto;
     width: 150px;
+    height: auto;
     font-size: x-small;
   }
   div.prodtr div.prod p.precio {
@@ -1064,9 +1062,14 @@ div.formredes img {
   section.form-container h5.telefono {
     color: black;
   }
+  section.form-container input.enviar {
+    border-style: solid;
+    border-color: white;
+    color: white;
+  }
   div.formredes img {
-    height: 25px;
     width: auto;
+    height: 25px;
   }
 }
 /* Nosotros */
@@ -1086,8 +1089,8 @@ div.formredes img {
     color: black;
   }
   section.fondotexto iframe.iframe {
-    height: 125px;
     width: 300px;
+    height: 125px;
     border-radius: 10px;
   }
 }
@@ -1101,13 +1104,10 @@ div.formredes img {
     background-repeat: no-repeat;
   }
   header {
-    position: sticky;
-    top: 0%;
-    z-index: 1;
     background: rgb(255, 255, 255);
-    background: linear-gradient(336deg, rgba(0, 0, 0, 0.563) 22%, rgba(255, 255, 255, 0) 22%, rgba(255, 255, 255, 0.374) 64%, rgba(0, 0, 0, 0.563) 64%);
-    height: auto;
+    background: linear-gradient(336deg, rgba(0, 0, 0, 0.563) 22%, rgba(255, 255, 255, 0.262) 22%, rgba(255, 255, 255, 0.36) 64%, rgba(0, 0, 0, 0.563) 64%);
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1128,8 +1128,8 @@ div.formredes img {
     align-items: center;
   }
   header ul.flex-nav {
-    height: auto;
     width: 100%;
+    height: auto;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -1148,7 +1148,7 @@ div.formredes img {
   }
   header ul.flex-nav li a.nav:hover {
     transform: scale(1.05);
-    color: rgb(240, 255, 109);
+    color: rgba(141, 150, 60, 0.523);
   }
   header div.cara {
     height: 50px;
@@ -1172,6 +1172,7 @@ div.formredes img {
     background-color: transparent;
     text-align: center;
     padding: 0px;
+    margin: 5px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0.222);
   }
   ul.navdesplegable li:hover {
@@ -1189,24 +1190,13 @@ div.formredes img {
     color: white;
     text-decoration: none;
   }
-  div.img-supermercado {
-    display: none;
-    background-color: white;
-  }
-  div.img-supermercado img.img-supermercado-mobile {
-    display: none;
-  }
-  div.img-supermercado img.img-supermercado {
-    width: 100%;
-    height: auto;
-  }
   img.imgdeslizable {
-    height: 450px;
     width: 100%;
+    height: 450px;
   }
   img.todaslasbebidas {
-    height: auto;
     width: 100%;
+    height: auto;
     padding: 40px 10px 40px 10px;
   }
   section.pruebabanner {
@@ -1248,33 +1238,34 @@ div.formredes img {
     grid-row: 2;
   }
   section.pruebabanner img.suprema {
-    height: 220px;
     width: auto;
+    height: 220px;
   }
   section.pruebabanner img.novillo {
-    height: 220px;
     width: auto;
+    height: 220px;
   }
   section.pruebabanner img.elabora {
-    height: 440px;
     width: auto;
+    height: 440px;
     margin: 0px;
     padding: 0px;
   }
   section.pruebabanner img.lechon {
-    height: 220px;
     width: auto;
+    height: 220px;
   }
   section.pruebabanner img.cerdo {
-    height: 220px;
     width: auto;
+    height: 220px;
   }
   section.prods {
     display: flex;
     justify-content: space-evenly;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 10px 0px;
   }
   section.prods div.tacc {
+    cursor: pointer;
     background-color: white;
     display: flex;
     gap: 50px;
@@ -1282,7 +1273,12 @@ div.formredes img {
     padding: 10px 0px 10px 15px;
     box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
   }
+  section.prods div.tacc:hover {
+    transform: scale(1.01);
+    transition: 1s;
+  }
   section.prods div.pan {
+    cursor: pointer;
     background-color: white;
     display: flex;
     gap: 50px;
@@ -1290,6 +1286,10 @@ div.formredes img {
     border-radius: 10px;
     box-shadow: 10px;
     box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.175);
+  }
+  section.prods div.pan:hover {
+    transform: scale(1.01);
+    transition: 1s;
   }
   section.prods .h-prods {
     display: flex;
@@ -1299,8 +1299,8 @@ div.formredes img {
     font-size: large;
   }
   section.prods img.prods {
-    height: 120px;
     width: 300px;
+    height: 120px;
   }
   section.descuentos {
     display: grid;
@@ -1385,8 +1385,8 @@ div.formredes img {
     font-family: arial;
   }
   section.descuentos img.bancos {
+    width: 80;
     height: 40px;
-    width: 80px;
   }
   div.wpp {
     position: sticky;
@@ -1429,17 +1429,22 @@ div.formredes img {
   }
   div.foot-tamaño {
     text-align: center;
-    height: auto;
     width: 200px;
+    height: auto;
   }
   div.foot-tamaño p.tdcolor {
     display: flex;
     padding: 3px 0px;
     justify-content: center;
+    cursor: pointer;
+  }
+  div.foot-tamaño p.tdcolor:hover {
+    color: white;
+    text-decoration: underline;
   }
   div.foot-tamaño p.tdcolor img.redes {
-    height: 15px;
     width: 15px;
+    height: 15px;
   }
 }
 /* ALMACEN - CONGELADOS - BEBIDAS */
@@ -1468,12 +1473,12 @@ div.formredes img {
   }
   .marcasseleccionadas img.marcas {
     display: flex;
-    height: 50px;
     width: auto;
+    height: 50px;
   }
   div.product-encontrados {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: A Arial, Helvetica, sans-serif;
     font-size: 26px;
     justify-content: center;
     display: flex;
@@ -1499,6 +1504,7 @@ div.formredes img {
   }
   div.prodtr div.prod:hover {
     transform: scale(1.01);
+    transition: 0.5s;
   }
   div.prodtr div.prod img.prueba {
     justify-content: center;
@@ -1519,8 +1525,8 @@ div.formredes img {
   }
   div.mejores-ofertas {
     color: black;
-    height: auto;
     width: 100%;
+    height: auto;
     background-color: rgb(255, 255, 248);
     display: flex;
     justify-content: center;
@@ -1547,8 +1553,8 @@ div.formredes img {
     padding: 0px 80px 0px 80px;
   }
   section.fondotexto div.fondo-texto {
-    height: auto;
     width: 100%;
+    height: auto;
     margin: 80px 0px 80px 0px;
     display: flex;
     flex-direction: column;
@@ -1605,8 +1611,8 @@ div.formredes img {
     justify-content: center;
   }
   div.iframe iframe.iframe {
-    height: 250px;
     width: 600px;
+    height: 250px;
     display: flex;
     border: none;
     border-radius: 30px;
@@ -1631,8 +1637,8 @@ div.formredes img {
     gap: 15px;
   }
   section.form-container div.form-one div.formredes img {
-    height: 40px;
     width: auto;
+    height: 40px;
   }
   section.form-container div.form-two {
     display: flex;

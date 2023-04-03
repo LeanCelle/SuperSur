@@ -7,6 +7,23 @@
     font-family: 'Fraunces', serif;
 }
 
+/* VARIABLES */
+
+$fontFamilytTimesNewRoman: 'Times New Roman', Times, serif;
+$fontFamilyArial: Arial, Helvetica, sans-serif;
+$amarilloBg: rgba(210, 225, 49, 0.49);
+
+
+/* MIXIN */
+
+@mixin tamaños($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
+/* IMPORT */
+
 @import "index";
 @import "alma-beb-cong";
 @import "nosotros";
