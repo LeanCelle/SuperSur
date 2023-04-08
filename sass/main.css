@@ -716,10 +716,19 @@ div.formredes img {
     background-color: white;
     margin: 0px 0px 0px 0px;
   }
+  section.marcasseleccionadas .marcas-uno {
+    margin: 10px 0px 10px 0px;
+  }
+  section.marcasseleccionadas .marcas-dos {
+    margin: 10px 0px 10px 0px;
+  }
+  section.marcasseleccionadas .marcas-tres {
+    margin: 10px 0px 10px 0px;
+  }
   section.marcasseleccionadas img.marcas {
     display: flex;
     width: auto;
-    height: 14px;
+    height: 16px;
   }
   div.product-encontrados {
     background-color: rgba(210, 225, 49, 0);

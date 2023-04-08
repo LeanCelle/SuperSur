@@ -184,9 +184,18 @@
     section.marcasseleccionadas {
         background-color: white;
         margin: 0px 0px 0px 0px;
+        .marcas-uno {
+            margin: 10px 0px 10px 0px;
+        }
+        .marcas-dos {
+            margin: 10px 0px 10px 0px;
+        }
+        .marcas-tres {
+            margin: 10px 0px 10px 0px;
+        }
         img.marcas {
             display: flex;
-            @include tamaños(auto, 14px);
+            @include tamaños(auto, 16px);
         }
     }
 
