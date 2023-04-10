@@ -728,7 +728,7 @@
     
     header {
         background: rgb(255,255,255);
-        background: linear-gradient(336deg, rgba(0, 0, 0, 0.563) 22%, rgba(255, 255, 255, 0.262) 22%, rgba(255, 255, 255, 0.36) 64%, rgba(0, 0, 0, 0.563) 64%);
+        background: linear-gradient(336deg, rgba(0, 0, 0, 0.563) 22%, rgba(255, 255, 255, 0.262) 22%, rgba(255, 255, 255, 0.36) 63%, rgba(0, 0, 0, 0.563) 63%);
         @include tamaños(100%, auto);
         display: flex;
         justify-content: space-around;
@@ -742,7 +742,6 @@
                 color: white;
                 display: flex;
                 @include tamaños(100%, 165px);
-                font-family: 'Cinzel', serif;
                 font-size: 80px;
                 align-items: center;
             }
@@ -760,7 +759,7 @@
                 display: flex;
                 width: 100%;
                 height: auto;
-                font-size: larger;
+                font-size: 20px;
                 padding:0px 30px;
                 align-items: center;
                 &:hover {
