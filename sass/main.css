@@ -872,6 +872,8 @@ section.container-registro div.nueva-cuenta p.crear-cuenta:hover {
     text-align: center;
     margin: 30px 0px 0px 0px;
     padding: 20px 10px 0px 10px;
+    border-bottom: solid white;
+    border-top: solid white;
   }
   section.form-container h5.telefono {
     color: black;
@@ -896,6 +898,9 @@ section.container-registro div.nueva-cuenta p.crear-cuenta:hover {
     padding: 30px;
     margin: 30px 0px 0px 0px;
     border-radius: 0px;
+    border-bottom: solid white;
+    border-top: solid white;
+    box-shadow: none;
   }
   section.fondotexto ul.horarios {
     padding: 0px;
