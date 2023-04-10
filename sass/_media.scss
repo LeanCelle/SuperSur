@@ -38,7 +38,7 @@
         }
         img.carawhite {
             display: flex;
-            padding: 10px 0px 0px 0px;
+            padding: 20px 0px 0px 0px;
             width: 20px;
         }
     }
@@ -254,7 +254,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 10px 10px 0px 10px;
+        margin:30px 0px 0px 0px;
         padding: 20px 10px 0px 10px;
         h5.telefono {
             color: black;
@@ -276,9 +276,11 @@
     section.fondotexto {
         display: flex;
         font-size: medium;
-        padding: 0px 10px;
+        padding: 0px;
         div.fondo-texto {
-            margin: 40px 0px;
+            padding: 30px;
+            margin: 30px 0px 0px 0px;
+            border-radius: 0px;
         }
         ul.horarios {
             padding: 0px;
@@ -295,6 +297,54 @@
         }
     }
 }
+
+
+
+/* REGISTRO */
+
+@media (max-width: 576px) {
+    section.container-registro {
+        margin: 40px 0px 40px 0px;
+        padding: 40px 0px 40px 0px;
+        border-radius: 0px;
+        div.login {
+            padding: 0px 0px 30px 0px;
+            h3.h-tres-registro {
+                font-size: 40px;
+            }
+        }
+        div.registro-nombreYcontra {
+            margin: 0px 45px;
+            gap: 10px;
+            input.registro {
+                font-size: medium;
+                padding: 6px 0px 6px 0px;
+                border-radius: 5px;
+            }
+        }
+        div.div-boton-login {
+            padding: 30px 0px 0px 0px;
+            input.boton-login {
+                background-color: rgba(0, 0, 0, 0.205);
+                border: 2px white;
+                border-style: solid;
+                border-radius: 5px;
+                font-size: small;
+                padding: 10px 30px 10px 30px;
+            }
+        }
+        div.container-olvido {
+            font-size: small;
+            padding: 20px 0px 0px 0px;
+        }
+        div.nueva-cuenta {
+            padding: 20px 0px 0px 0px;
+            font-size: small;
+            gap: 4px;
+        }
+    }
+}
+
 
 
 
@@ -339,7 +389,7 @@
         }
         img.carawhite {
             display: flex;
-            padding: 7px 0px 0px 0px;
+            padding: 18px 0px 0px 0px;
             width: 20px;
         }
     }
@@ -550,7 +600,7 @@
 
 @media (min-width: 577px) and (max-width: 1200px) {
     section.form-container {
-        margin: 10px 10px 0px 10px;
+        margin: 30px 0px 0px 0px;
         padding: 20px 10px 0px 10px;
         h5.telefono {
             color: black;
@@ -574,23 +624,84 @@
 @media (min-width: 577px) and (max-width: 1200px) {
     section.fondotexto {
         display: flex;
-        font-size: smaller;
-        ul.horarios {
-            padding: 0px;
-            & li {
-                font-size: smaller;
+        font-size: medium;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        div.fondo-texto {
+            padding: 30px;
+            margin: 30px 0px 0px 0px;
+            border-radius: 0px;
+            ul.horarios {
+                padding: 0px;
+                & li {
+                    font-size: medium;
+                }
             }
-        }
-        p.telefono {
-            font-size: smaller;
-            color: black;
-        }
-        iframe.iframe {
-            @include tamaños(300px, 125px);
-            border-radius: 10px;
+            p.telefono {
+                font-size: medium;
+                color: black;
+            }
+            iframe.iframe {
+                @include tamaños(350px, 180px);
+                border-radius: 10px;
+            }
         }
     }
 }
+
+
+
+
+
+/* REGISTRO */
+
+@media (min-width: 577px) and (max-width: 1200px) {
+    section.container-registro {
+        margin: 40px 0px 40px 0px;
+        padding: 40px 0px 40px 0px;
+        border-radius: 0px;
+        div.login {
+            padding: 0px 0px 30px 0px;
+            h3.h-tres-registro {
+                font-size: 50px;
+            }
+        }
+        div.registro-nombreYcontra {
+            margin: 0px 150px;
+            gap: 10px;
+            input.registro {
+                font-size: large;
+                padding: 6px 0px 6px 0px;
+                border-radius: 5px;
+            }
+        }
+        div.div-boton-login {
+            padding: 30px 0px 0px 0px;
+            input.boton-login {
+                background-color: rgba(0, 0, 0, 0.205);
+                border: 2px white;
+                border-style: solid;
+                border-radius: 5px;
+                font-size: large;
+                padding: 10px 30px 10px 30px;
+            }
+        }
+        div.container-olvido {
+            font-size: medium;
+            padding: 20px 0px 0px 0px;
+        }
+        div.nueva-cuenta {
+            padding: 20px 0px 0px 0px;
+            font-size: medium;
+            gap: 4px;
+        }
+    }
+}
+
+
+
+
+
 
 
 
@@ -653,12 +764,15 @@
             }
         }
         div.cara {
-            height: 50px;
             display: flex;
             border: none;
             &:hover {
                 transform: scale(1.05);
                 cursor: pointer;
+            }
+            img.carawhite {
+                width: 50px;
+                height: auto;
             }
             img.cara {
                 display: none;
@@ -1172,6 +1286,107 @@
         }
     }
 }
+
+
+
+/* REGISTRO */
+
+@media (min-width: 1201px) { 
+    section.container-registro {
+        background-color: rgba(61, 61, 61, 0.24);
+        display: flex;
+        flex-direction: column;
+        margin: 80px 400px 80px 400px;
+        padding: 60px 30px 60px 30px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.46);
+        div.login {
+            padding: 0px 0px 30px 0px;
+            color: rgba(0, 0, 0, 0.585);
+            text-align: center;
+            h3.h-tres-registro {
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 50px;
+            }
+        }
+        div.registro-nombreYcontra {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 150px;
+            gap: 10px;
+            input.registro {
+                background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.682)) ;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: large;
+                padding: 6px 0px 6px 0px;
+                border-radius: 5px;
+                border: white;
+                text-align: center;
+            }
+        }
+        div.div-boton-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0px 0px 0px;
+            input.boton-login {
+                color: white;
+                background-color: rgba(0, 0, 0, 0.205);
+                border: 2px white;
+                border-style: solid;
+                border-radius: 5px;
+                font-size: large;
+                padding: 10px 30px 10px 30px;
+                &:hover {
+                    transform:scale(1.02);
+                    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.199);
+                    color: rgba(0, 0, 0, 0.742);
+                    background-color: rgba(255, 255, 255, 0.407);
+                }
+            }
+        }
+        div.container-olvido {
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+            padding: 20px 0px 0px 0px;
+            p.olvido-su-contrasena {
+                text-decoration: underline;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        div.nueva-cuenta {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px 0px 0px 0px;
+            font-size: larger;
+            gap: 4px;
+            p.nuevo-cliente {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p.crear-cuenta {
+                color: rgba(0, 0, 255, 0.336);
+                font-family: 'Times New Roman', Times, serif;
+                text-decoration: underline;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
