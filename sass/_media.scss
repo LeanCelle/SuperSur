@@ -218,6 +218,7 @@
             & img.prueba {
                 justify-content: center;
                 display: flex;
+                padding: 0px 0px 10px 0px;
                 @include tamaños(150px, auto);
             }
             & p {
@@ -229,8 +230,13 @@
                 padding-top: 10px;
                 font-size: x-small;
             }
-            img.prueba {
-                padding: 0px 0px 10px 0px;
+            select.form-select-sm {
+                font-size: x-small;
+            }
+            img.changuito {
+                margin-top: 20px;
+                width: 30px;
+                height: auto;
             }
         }
     }
@@ -328,6 +334,71 @@
                 border-radius: 5px;
             }
         }
+
+        .contenedor-boton {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0px 0px 0px;
+        }
+        
+        .btnn {
+            position: relative;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.205);
+            border: 2px white;
+            border-style: solid;
+            border-radius: 5px;
+            font-size: large;
+            padding: 10px 30px 10px 30px;
+            text-decoration: none;
+            transition: all 0.6s ease;
+            z-index: 2;
+            font-size: medium;
+        }
+        
+        .btnn-5 {
+            border: solid white;
+            overflow: hidden;
+        }
+        
+        .btnn-5::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: aquamarine;
+            z-index: -2;
+        }
+        
+        .btnn-5::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 250px;
+            left: 0;
+            bottom: -150%;
+            border-radius: 30%;
+            background-color: rgba(0, 0, 0, 0.205);
+            z-index: -1;
+        }
+        .btnn-5:hover::before {
+            animation: btnn-5 2s linear both;
+        }
+        
+        @keyframes btnn-5 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {
+                bottom: 100px;
+                transform:rotate(360deg)
+            }
+        }
+
         div.div-boton-login {
             padding: 30px 0px 0px 0px;
             input.boton-login {
@@ -421,7 +492,7 @@
     div.menudinamico {
         margin: 0px 0px 0px 0px;
         img.imgdeslizable {
-            @include tamaños(100%, 150px);
+            @include tamaños(100%, 300px);
         }
     }
 
@@ -572,19 +643,30 @@
             & img.prueba {
                 justify-content: center;
                 display: flex;
+                padding: 0px 0px 10px 0px;
                 @include tamaños(150px, auto);
             }
             & p {
                 display: flex;
                 @include tamaños(150px, auto);
-                font-size: x-small;
+                font-size: small;
             }
             p.precio {
                 padding-top: 10px;
-                font-size: x-small;
+                font-size: small;
             }
-            img.prueba {
-                padding: 0px 0px 10px 0px;
+            select.form-select {
+                font-size: small;
+            }
+            img.changuito {
+                margin-top: 20px;
+                width: 50px;
+                height: auto;
+                &:hover {
+                    transform: scale(1.05);
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -681,6 +763,70 @@
                 border-radius: 5px;
             }
         }
+
+        .contenedor-boton {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0px 0px 0px;
+        }
+        
+        .btnn {
+            position: relative;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.205);
+            border: 2px white;
+            border-style: solid;
+            border-radius: 5px;
+            font-size: large;
+            padding: 10px 30px 10px 30px;
+            text-decoration: none;
+            transition: all 0.6s ease;
+            z-index: 2;
+        }
+        
+        .btnn-5 {
+            border: solid white;
+            overflow: hidden;
+        }
+        
+        .btnn-5::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: aquamarine;
+            z-index: -2;
+        }
+        
+        .btnn-5::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 250px;
+            left: 0;
+            bottom: -150%;
+            border-radius: 30%;
+            background-color: rgba(0, 0, 0, 0.205);
+            z-index: -1;
+        }
+        .btnn-5:hover::before {
+            animation: btnn-5 2s linear both;
+        }
+        
+        @keyframes btnn-5 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {
+                bottom: 100px;
+                transform:rotate(360deg)
+            }
+        }
+
         div.div-boton-login {
             padding: 30px 0px 0px 0px;
             input.boton-login {
@@ -1124,12 +1270,8 @@
             flex-direction: column;
             align-items: center;
             background-color: white;
-            padding: 30px 5px 30px 5px;
+            padding: 30px 5px 15px 5px;
             box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
-            &:hover {
-                transform: scale(1.01);
-                transition: 0.5s;
-            }
             & img.prueba {
                 justify-content: center;
                 display: flex;
@@ -1143,10 +1285,23 @@
                 text-align: center;
             }
             p.precio {
-                padding-top: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            img.changuito {
+                margin-top: 20px;
+                width: 50px;
+                height: auto;
+                &:hover {
+                    transform: scale(1.05);
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
             }
         }
     }
+
+
     
     div.mejores-ofertas {
         color: black;
@@ -1329,27 +1484,69 @@
                 text-align: center;
             }
         }
-        div.div-boton-login {
+        .contenedor-boton {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             padding: 30px 0px 0px 0px;
-            input.boton-login {
-                color: white;
-                background-color: rgba(0, 0, 0, 0.205);
-                border: 2px white;
-                border-style: solid;
-                border-radius: 5px;
-                font-size: large;
-                padding: 10px 30px 10px 30px;
-                &:hover {
-                    transform:scale(1.02);
-                    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.199);
-                    color: rgba(0, 0, 0, 0.742);
-                    background-color: rgba(255, 255, 255, 0.407);
-                }
+        }
+        
+        .btnn {
+            position: relative;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.205);
+            border: 2px white;
+            border-style: solid;
+            border-radius: 5px;
+            font-size: large;
+            padding: 10px 30px 10px 30px;
+            text-decoration: none;
+            transition: all 0.6s ease;
+            z-index: 2;
+        }
+        
+        .btnn-5 {
+            border: solid white;
+            overflow: hidden;
+        }
+        
+        .btnn-5::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: aquamarine;
+            z-index: -2;
+        }
+        
+        .btnn-5::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 250px;
+            left: 0;
+            bottom: -150%;
+            border-radius: 30%;
+            background-color: rgba(0, 0, 0, 0.205);
+            z-index: -1;
+        }
+        .btnn-5:hover::before {
+            animation: btnn-5 2s linear both;
+        }
+        
+        @keyframes btnn-5 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {
+                bottom: 100px;
+                transform:rotate(360deg)
             }
         }
+
         div.container-olvido {
             display: flex;
             justify-content: center;
@@ -1383,6 +1580,7 @@
         }
     }
 }
+
 
 
 
