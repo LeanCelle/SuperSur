@@ -242,6 +242,15 @@
         }
     }
 
+    ul.pagination {
+        margin-top: 40px;
+    }
+
+    a.page-link {
+        color: rgb(116, 116, 255);
+        border-color: white;
+    }
+
     div.mejores-ofertas {
         display: flex;
         flex-direction: column;
@@ -671,6 +680,15 @@
                 }
             }
         }
+    }
+
+    ul.pagination {
+        margin-top: 40px;
+    }
+
+    a.page-link {
+        color: rgb(116, 116, 255);
+        border-color: white;
     }
 
     div.mejores-ofertas {
@@ -1305,7 +1323,7 @@
     }
 
     a.page-link {
-        color: blue;
+        color: rgb(116, 116, 255);
         border-color: white;
     }
 
