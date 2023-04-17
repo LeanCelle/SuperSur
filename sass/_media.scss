@@ -45,6 +45,7 @@
     ul.navdesplegable {
         @include tamaños(75px, auto);
         margin: 2px 0px 0px -3.8px;
+        border-radius: 3px;
     }
 
     div.menudinamico {
@@ -474,6 +475,7 @@
         z-index: 1;
         @include tamaños(120px, auto);
         margin: -8px 0px 0px -17px;
+        border-radius: 3px;
     }
 
     div.img-supermercado {
@@ -944,6 +946,7 @@
         padding: 0px;
         margin: 0px 0px 0px 0px;
         background-color: rgba(0, 0, 0, 0.222);
+        border-radius: 3px;
         & li:hover {
             transform: scale(1.05);
         }
@@ -1301,6 +1304,10 @@
         }
     }
 
+    a.page-link {
+        color: blue;
+        border-color: white;
+    }
 
     
     div.mejores-ofertas {

@@ -7,6 +7,7 @@
         <meta name="description" content="Encontrá aquí las bebidas que buscas, con precios y descuentos increíbles que no te podes perder!. Supersur, tu supermercado de confianza">
         <meta name="keywords" content="supermercado, compra, productos, comidas, hogar, heladera, ofertas, promociones, lanus, zona sur">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="shortcut icon" href="../img/letra-s.jpg" type="image/x-icon">
         <link rel="stylesheet" href="../sass/main.css">
         <title>SuperSur</title>
@@ -40,24 +41,24 @@
         <main>
             <section class="marcasseleccionadas">
                 <div class="marcas-uno">
-                    <img class="marcas" src="../img/villa_del_sur-logo.png" alt="Villa del sur">
-                    <img class="marcas" src="../img/cellier-logo.png" alt="Cellier">
-                    <img class="marcas" src="../img/kin-logo.png" alt="Kin">
-                    <img class="marcas" src="../img/coca_cola-logo.png" alt="Coca Cola">
-                    <img class="marcas" src="../img/pepsi-logo.png" alt="Pepsi">
+                    <img class="marcas" src="../img/villa_del_sur-logo.png" alt="Villa del sur" data-aos="zoom-in">
+                    <img class="marcas" src="../img/cellier-logo.png" alt="Cellier" data-aos="zoom-in">
+                    <img class="marcas" src="../img/kin-logo.png" alt="Kin" data-aos="zoom-in">
+                    <img class="marcas" src="../img/coca_cola-logo.png" alt="Coca Cola" data-aos="zoom-in">
+                    <img class="marcas" src="../img/pepsi-logo.png" alt="Pepsi" data-aos="zoom-in">
                 </div>
                 <div class="marcas-dos">
-                    <img class="marcas" src="../img/sprite-logo.png" alt="Sprite">
-                    <img class="marcas" src="../img/paso_de_los_toros-logo.jpg" alt="Paso de los Toros">
-                    <img class="marcas" src="../img/seven_up-logo.png" alt="7up">
-                    <img class="marcas" src="../img/pritty-logo.jpg" alt="Pritty">
-                    <img class="marcas" src="../img/latitud-logo.jpg" alt="Latitud 33">
+                    <img class="marcas" src="../img/sprite-logo.png" alt="Sprite" data-aos="zoom-in">
+                    <img class="marcas" src="../img/paso_de_los_toros-logo.jpg" alt="Paso de los Toros" data-aos="zoom-in">
+                    <img class="marcas" src="../img/seven_up-logo.png" alt="7up" data-aos="zoom-in">
+                    <img class="marcas" src="../img/pritty-logo.jpg" alt="Pritty" data-aos="zoom-in">
+                    <img class="marcas" src="../img/latitud-logo.jpg" alt="Latitud 33" data-aos="zoom-in">
                 </div>
                 <div class="marcas-tres">
-                    <img class="marcas" src="../img/alma_mora-logo.png" alt="Alma Mora">
-                    <img class="marcas" src="../img/quilmes-logo.png" alt="Quilmes">
-                    <img class="marcas" src="../img/heineken-logo.png" alt="Heineken">
-                    <img class="marcas" src="../img/schneider-logo.jpg" alt="Schneider">
+                    <img class="marcas" src="../img/alma_mora-logo.png" alt="Alma Mora" data-aos="zoom-in">
+                    <img class="marcas" src="../img/quilmes-logo.png" alt="Quilmes" data-aos="zoom-in">
+                    <img class="marcas" src="../img/heineken-logo.png" alt="Heineken" data-aos="zoom-in">
+                    <img class="marcas" src="../img/schneider-logo.jpg" alt="Schneider" data-aos="zoom-in">
                 </div>
             </section>
         
@@ -427,6 +428,24 @@
                     </div>
                 </div>
             </section>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
         
             <div class="wpp">
                 <a href="https://www.whatsapp.com/" target="_blank"><img class="wpp" src="../img/descarga.png" alt="wpp"></a>
@@ -477,5 +496,9 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

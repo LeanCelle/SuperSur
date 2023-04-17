@@ -660,6 +660,7 @@ section.container-registro div.nueva-cuenta p.crear-cuenta:hover {
     width: 75px;
     height: auto;
     margin: 2px 0px 0px -3.8px;
+    border-radius: 3px;
   }
   div.menudinamico {
     margin: 0px 0px 10px 0px;
@@ -1065,6 +1066,7 @@ section.container-registro div.nueva-cuenta p.crear-cuenta:hover {
     width: 120px;
     height: auto;
     margin: -8px 0px 0px -17px;
+    border-radius: 3px;
   }
   div.img-supermercado {
     display: none;
@@ -1504,6 +1506,7 @@ section.container-registro div.nueva-cuenta p.crear-cuenta:hover {
     padding: 0px;
     margin: 0px 0px 0px 0px;
     background-color: rgba(0, 0, 0, 0.222);
+    border-radius: 3px;
   }
   ul.navdesplegable li:hover {
     transform: scale(1.05);
@@ -1859,6 +1862,10 @@ section.container-registro div.nueva-cuenta p.crear-cuenta:hover {
     transform: scale(1.05);
     transition: 0.5s;
     cursor: pointer;
+  }
+  a.page-link {
+    color: blue;
+    border-color: white;
   }
   div.mejores-ofertas {
     color: black;
